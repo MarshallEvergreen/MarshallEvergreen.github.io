@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link as GatsbyLink } from "gatsby"
+import logo from '../images/logo.svg';
 import {
     Box,
     Flex,
@@ -8,9 +9,9 @@ import {
     IconButton,
     useDisclosure,
     useColorModeValue,
-    Stack,
+    Stack, Image, Spacer,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import {HamburgerIcon, CloseIcon} from '@chakra-ui/icons';
 
 const Links = ['About', 'Publications'];
 
@@ -28,6 +29,19 @@ const NavLink = ({ label, link }) => (
 
 )
 
+const HomeLink = () => (
+    <HStack spacing={8}>
+        <GatsbyLink to={"/#/"}>
+            <Image
+                src={logo}
+                minW={'40px'}
+                maxW={'80px'}
+                height={'auto'}
+            />
+        </GatsbyLink>
+    </HStack>
+)
+
 export default function Navbar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -36,17 +50,11 @@ export default function Navbar() {
             <Box
                 borderBottomWidth={1}
                 borderStyle={'solid'}
-                bg={useColorModeValue('purple.50', 'gray.900')} px={4}>
-                <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-                    <IconButton
-                        size={'md'}
-                        icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-                        aria-label={'Open Menu'}
-                        display={{ md: 'none' }}
-                        onClick={isOpen ? onClose : onOpen}
-                    />
-                    <NavLink label={'Abie Marshall'} link={'#'}/>
-                    <HStack spacing={8} alignItems={'right'}>
+                bg={useColorModeValue('grey.200', 'gray.900')} px={4}>
+                <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
+                    <HomeLink/>
+                    <Spacer flexGrow={1}/>
+                    <HStack spacing={8}>
                         <HStack
                             as={'nav'}
                             spacing={4}
@@ -55,6 +63,13 @@ export default function Navbar() {
                                 <NavLink label={link} link={link}/>
                             ))}
                         </HStack>
+                        <IconButton
+                            size={'md'}
+                            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+                            aria-label={'Open Menu'}
+                            display={{ md: 'none' }}
+                            onClick={isOpen ? onClose : onOpen}
+                        />
                     </HStack>
                 </Flex>
 

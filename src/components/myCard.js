@@ -1,5 +1,5 @@
 import * as React from "react"
-import logo from './../images/me.jpg';
+import me from './../images/me.jpg';
 import {
     Box,
     Center,
@@ -9,8 +9,6 @@ import {
     Stack,
     Image,
 } from '@chakra-ui/react';
-import SocialButton from "./socialButton";
-import {FaGithub, FaLinkedin} from "react-icons/fa";
 import LinkedInButton from "./linkedInButton";
 import GithubButton from "./githubButton";
 
@@ -53,7 +51,7 @@ export default function MyCard() {
                         height={230}
                         width={282}
                         objectFit={'cover'}
-                        src={logo}
+                        src={me}
                     />
                 </Box>
                 <Stack pt={10} align={'center'}>

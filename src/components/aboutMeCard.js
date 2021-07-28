@@ -2,9 +2,8 @@ import * as React from "react"
 import {
     Center,
     Text,
-    Heading, Box, Stack, Link, useColorModeValue
+    Heading, Stack
 } from '@chakra-ui/react';
-import {ExternalLinkIcon} from "@chakra-ui/icons";
 import ExternalLink from "./externalLink";
 
 export default function AboutMeCard() {
