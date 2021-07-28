@@ -1,4 +1,5 @@
 import * as React from "react"
+import logo from './../images/me.jpg';
 import {
     Box,
     Center,
@@ -8,10 +9,10 @@ import {
     Stack,
     Image,
 } from '@chakra-ui/react';
+import SocialButton from "./socialButton";
+import {FaGithub, FaLinkedin} from "react-icons/fa";
 
-const IMAGE = 'me.JPG';
-
-export default function ProductSimple() {
+export default function MyCard() {
     return (
         <Center py={12}>
             <Box
@@ -37,7 +38,6 @@ export default function ProductSimple() {
                         pos: 'absolute',
                         top: 5,
                         left: 0,
-                        backgroundImage: `url(${IMAGE})`,
                         filter: 'blur(15px)',
                         zIndex: -1,
                     }}
@@ -51,23 +51,23 @@ export default function ProductSimple() {
                         height={230}
                         width={282}
                         objectFit={'cover'}
-                        src={IMAGE}
+                        src={logo}
                     />
                 </Box>
                 <Stack pt={10} align={'center'}>
-                    <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
-                        Brand
-                    </Text>
                     <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-                        Nice Chair, pink
+                        Abie Marshall BSc (Hons)
                     </Heading>
+                    <Text color={'gray.500'}>🥇 First Class Physics Graduate</Text>
+                    <Text color={'gray.500'}>📊 MSc Data Science Student</Text>
+                    <Text color={'gray.500'}>👨🏻‍💻 Full Stack Developer</Text>
                     <Stack direction={'row'} align={'center'}>
-                        <Text fontWeight={800} fontSize={'xl'}>
-                            $57
-                        </Text>
-                        <Text textDecoration={'line-through'} color={'gray.600'}>
-                            $199
-                        </Text>
+                        <SocialButton label={'LinkedIn'} href={'#'}>
+                            <FaLinkedin />
+                        </SocialButton>
+                        <SocialButton label={'GitHub'} href={'#'}>
+                            <FaGithub />
+                        </SocialButton>
                     </Stack>
                 </Stack>
             </Box>

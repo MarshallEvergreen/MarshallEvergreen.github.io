@@ -1,13 +1,15 @@
 import * as React from "react"
-import { ChakraProvider } from "@chakra-ui/react"
+import {ChakraProvider} from "@chakra-ui/react"
 import WithSubnavigation from "../components/navbar";
+import LargeWithAppLinksAndSocial from "../components/footer";
 
-const Dashboard = () => {
+const About = () => {
     return <div>
         <ChakraProvider>
             <WithSubnavigation/>
+            <LargeWithAppLinksAndSocial/>
         </ChakraProvider>
     </div>
 }
 
-export default Dashboard
+export default About
