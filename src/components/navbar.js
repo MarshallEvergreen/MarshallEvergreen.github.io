@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import {HamburgerIcon, CloseIcon} from '@chakra-ui/icons';
 
-const Links = ['About'];
+const Links = ['Experience'];
 
 const NavLink = ({ label, link }) => (
     <GatsbyLink to={"/" + link.toLowerCase() + "/"}>
@@ -50,7 +50,7 @@ export default function Navbar() {
             <Box
                 borderBottomWidth={1}
                 borderStyle={'solid'}
-                bg={useColorModeValue('grey.200', 'gray.900')} px={4}>
+                bg={useColorModeValue('white', 'gray.900')} px={4}>
                 <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
                     <HomeLink/>
                     <Spacer flexGrow={1}/>

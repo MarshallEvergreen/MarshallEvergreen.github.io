@@ -21,7 +21,7 @@ const ListHeader = ({ children }) => {
 export default function Footer() {
     return (
         <Box
-            bg={useColorModeValue('grey.200', 'gray.900')}
+            bg={useColorModeValue('white', 'gray.900')}
             color={useColorModeValue('gray.700', 'gray.200')}>
             <Box
                 borderTopWidth={1}

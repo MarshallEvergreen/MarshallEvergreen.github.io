@@ -8,7 +8,15 @@ export default function Education() {
     return (
         <Box p={4}
         >
-            <Heading>🎓 Education</Heading>
+            <Heading
+                textAlign={'center'}
+                textTransform={'uppercase'}
+                fontWeight={800}
+                letterSpacing={1.1}
+                as="h4"
+                size="lg">
+                🎓 Education
+            </Heading>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
                 <EducationCard
                     degree={'2021 - 2022 MSc Data Science'}

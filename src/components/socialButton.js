@@ -16,7 +16,7 @@ export default function SocialButton ({children: icon, label, href}) {
             justifyContent={'center'}
             transition={'background 0.3s ease'}
             _hover={{
-                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                bg: useColorModeValue('purple.100', 'whiteAlpha.200'),
             }}>
             <VisuallyHidden>{label}</VisuallyHidden>
             {icon}

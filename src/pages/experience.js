@@ -2,10 +2,10 @@ import * as React from "react"
 import Page from "./page";
 import Education from "../components/education";
 
-const About = () => {
+const Experience = () => {
     return <Page>
         <Education/>
     </Page>
 }
 
-export default About
+export default Experience
