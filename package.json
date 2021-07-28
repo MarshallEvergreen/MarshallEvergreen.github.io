@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.14",
@@ -23,6 +24,7 @@
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
-    "@chakra-ui/react": "^1.6.5"
+    "@chakra-ui/react": "^1.6.5",
+    "gh-pages": "^3.2.3"
   }
 }
