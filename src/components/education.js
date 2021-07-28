@@ -22,7 +22,7 @@ export default function Education() {
                     title={'2021 - 2022 MSc Data Science'}
                     description={
                         'Studying how to efficiently find patterns in these vast streams of data. This means taking ' +
-                        'modules on Machine Learning, Statistics, Optimization, Databases and Data Management. Hoping' +
+                        'modules on Machine Learning, Statistics, Optimization, Databases and Data Management. Hoping ' +
                         'to tailor my dissertation towards an environmental challenge where these skills can be applied. '
                     }
                     image={<Image src={edinburgh}/>}
