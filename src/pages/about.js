@@ -1,12 +1,14 @@
 import * as React from "react"
 import {ChakraProvider} from "@chakra-ui/react"
-import WithSubnavigation from "../components/navbar";
+import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Education from "../components/education";
 
 const About = () => {
     return <div>
         <ChakraProvider>
-            <WithSubnavigation/>
+            <Navbar/>
+            <Education/>
             <Footer/>
         </ChakraProvider>
     </div>

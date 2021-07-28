@@ -5,7 +5,7 @@ import {ExternalLinkIcon} from "@chakra-ui/icons";
 export default function ExternalLink ({href, text}) {
     return (
         <Link
-            color={useColorModeValue('blue.500', 'gray.200')}
+            color={useColorModeValue('purple.500', 'gray.200')}
             href={href} isExternal>
             {text}<ExternalLinkIcon mx="2px" />
         </Link>

@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import {HamburgerIcon, CloseIcon} from '@chakra-ui/icons';
 
-const Links = ['About', 'Publications'];
+const Links = ['About', 'Tech'];
 
 const NavLink = ({ label, link }) => (
     <GatsbyLink to={"/" + link.toLowerCase() + "/"}>
@@ -23,7 +23,7 @@ const NavLink = ({ label, link }) => (
         rounded={'md'}
         _hover={{
             textDecoration: 'none',
-            bg: useColorModeValue('green.100', 'gray.700'),
+            bg: useColorModeValue('purple.100', 'gray.700'),
         }}>{label}</Text>
     </GatsbyLink>
 
