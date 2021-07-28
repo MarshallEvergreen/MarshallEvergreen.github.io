@@ -11,6 +11,8 @@ import {
 } from '@chakra-ui/react';
 import SocialButton from "./socialButton";
 import {FaGithub, FaLinkedin} from "react-icons/fa";
+import LinkedInButton from "./linkedInButton";
+import GithubButton from "./githubButton";
 
 export default function MyCard() {
     return (
@@ -62,12 +64,8 @@ export default function MyCard() {
                     <Text color={'gray.500'}>📊 MSc Data Science Student</Text>
                     <Text color={'gray.500'}>👨🏻‍💻 Full Stack Developer</Text>
                     <Stack direction={'row'} align={'center'}>
-                        <SocialButton label={'LinkedIn'} href={'#'}>
-                            <FaLinkedin />
-                        </SocialButton>
-                        <SocialButton label={'GitHub'} href={'#'}>
-                            <FaGithub />
-                        </SocialButton>
+                        <LinkedInButton/>
+                        <GithubButton/>
                     </Stack>
                 </Stack>
             </Box>

@@ -10,6 +10,9 @@ import {
 import {FaLinkedin, FaGithub} from 'react-icons/fa';
 import SocialButton from "./socialButton";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
+import LinkedInButton from "./linkedInButton";
+import GithubButton from "./githubButton";
+import ExternalLink from "./externalLink";
 
 const ListHeader = ({ children }) => {
     return (
@@ -19,7 +22,7 @@ const ListHeader = ({ children }) => {
     );
 };
 
-export default function LargeWithAppLinksAndSocial() {
+export default function Footer() {
     return (
         <Box
             bg={useColorModeValue('purple.50', 'gray.900')}
@@ -37,25 +40,15 @@ export default function LargeWithAppLinksAndSocial() {
                     justify={{ md: 'space-between' }}
                     align={{ md: 'center' }}>
                     <Text>© 2021 Abie Marshall. Built with {" "}
-                        <Link href="https://www.gatsbyjs.com/" isExternal>
-                            Gatsby<ExternalLinkIcon mx="2px" />
-                        </Link>
+                        <ExternalLink href="https://www.gatsbyjs.com/" text={"Gatsby"}/>
                         {" + "}
-                        <Link href="https://reactjs.org/" isExternal>
-                            React<ExternalLinkIcon mx="2px" />
-                        </Link>
+                        <ExternalLink href="https://reactjs.org/" text={"React"}/>
                         {" + "}
-                        <Link href="https://chakra-ui.com/" isExternal>
-                            Chakra UI<ExternalLinkIcon mx="2px" />
-                        </Link>
+                        <ExternalLink href="https://chakra-ui.com/" text={"Chakra UI"}/>
                     </Text>
                     <Stack direction={'row'} spacing={6}>
-                        <SocialButton label={'LinkedIn'} href={'#'}>
-                            <FaLinkedin />
-                        </SocialButton>
-                        <SocialButton label={'GitHub'} href={'#'}>
-                            <FaGithub />
-                        </SocialButton>
+                        <LinkedInButton />
+                        <GithubButton/>
                     </Stack>
                 </Container>
             </Box>

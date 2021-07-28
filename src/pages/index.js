@@ -1,7 +1,7 @@
 import * as React from "react"
 import {Box, ChakraProvider, SimpleGrid, useColorModeValue} from "@chakra-ui/react"
 import MyCard from "../components/myCard";
-import LargeWithAppLinksAndSocial from "../components/footer";
+import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import AboutMeCard from "../components/aboutMeCard";
 
@@ -17,7 +17,7 @@ const IndexPage = () => {
                     <AboutMeCard/>
                 </SimpleGrid>
             </Box>
-            <LargeWithAppLinksAndSocial/>
+            <Footer/>
         </ChakraProvider>
     </div>
 }
