@@ -11,7 +11,7 @@ export default function AboutMeCard() {
         <Center padding={10}>
             <Stack spacing={3}>
                 <Heading as="h1" size="4xl">
-                    Hello!
+                    Hello_World!
                 </Heading>
                 <Text textAlign={'justify'}>
                     I am a first-class physics graduate and experienced full-stack software engineer, currently based in
