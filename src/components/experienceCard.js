@@ -7,7 +7,7 @@ import {
     useColorModeValue, Flex,
 } from '@chakra-ui/react';
 
-export default function EducationCard({degree, description, image}) {
+export default function ExperienceCard({title, description, image}) {
     return (
         <Center py={6}>
             <Box
@@ -32,7 +32,7 @@ export default function EducationCard({degree, description, image}) {
                             fontWeight={800}
                             fontSize={'sm'}
                             letterSpacing={1.1}>
-                            {degree}
+                            {title}
                         </Text>
                         <Text color={'gray.500'}>
                             {description}
