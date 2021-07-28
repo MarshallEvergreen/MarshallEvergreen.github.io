@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import {HamburgerIcon, CloseIcon} from '@chakra-ui/icons';
 
-const Links = ['About', 'Tech'];
+const Links = ['About'];
 
 const NavLink = ({ label, link }) => (
     <GatsbyLink to={"/" + link.toLowerCase() + "/"}>

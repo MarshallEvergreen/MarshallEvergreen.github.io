@@ -1,17 +1,11 @@
 import * as React from "react"
-import {ChakraProvider} from "@chakra-ui/react"
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Page from "./page";
 import Education from "../components/education";
 
 const About = () => {
-    return <div>
-        <ChakraProvider>
-            <Navbar/>
-            <Education/>
-            <Footer/>
-        </ChakraProvider>
-    </div>
+    return <Page>
+        <Education/>
+    </Page>
 }
 
 export default About
