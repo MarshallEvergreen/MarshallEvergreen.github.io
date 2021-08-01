@@ -6,7 +6,7 @@ import Page from "./page";
 
 const Index = () => {
     return <Page>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+        <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10}>
             <MyCard/>
             <AboutMeCard/>
         </SimpleGrid>

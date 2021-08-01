@@ -15,11 +15,11 @@ export default function AboutMeCard() {
                 </Heading>
                 <Text textAlign={'justify'}>
                     I am a first-class physics graduate and experienced full-stack software engineer, currently based in
-                    Edinburgh 🏰.
+                    Edinburgh. 🏰
                 </Text>
                 <Text textAlign={'justify'}>
                     Until recently I have worked for scientific instrument companies where I researched, designed
-                    and implemented instrument control software and data science solutions for Mass Spectrometers 🔬.
+                    and implemented instrument control software and data science solutions for Mass Spectrometers. 🔬
                     My background and knowledge allowed me to excel in interpreting scientific and software concepts
                     from relevant parties and improving communication between departments.
                 </Text>
