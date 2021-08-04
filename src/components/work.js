@@ -7,7 +7,7 @@ import waters from '../images/waters.jpg';
 export default function Work() {
     return (
         <Box p={4}
-        >
+             id={'Work'}>
             <Heading
                 textAlign={'center'}
                 textTransform={'uppercase'}

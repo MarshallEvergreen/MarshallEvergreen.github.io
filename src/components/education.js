@@ -7,6 +7,7 @@ import edinburgh from '../images/edinburgh.png';
 export default function Education() {
     return (
         <Box p={4}
+             id={'Education'}
         >
             <Heading
                 textAlign={'center'}

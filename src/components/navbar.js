@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link as GatsbyLink } from "gatsby"
+import { Link as ScrollLink } from "react-scroll";
 import logo from '../images/logo.svg';
 import {
     Box,
@@ -9,24 +10,30 @@ import {
     IconButton,
     useDisclosure,
     useColorModeValue,
-    Stack, Image, Spacer,
+    Stack, Image, Spacer
 } from '@chakra-ui/react';
 import {HamburgerIcon, CloseIcon} from '@chakra-ui/icons';
 
-const Links = ['Experience'];
+const Links = ['Education', 'Work'];
 
 const NavLink = ({ label, link }) => (
-    <GatsbyLink to={"/" + link.toLowerCase() + "/"}>
-        <Text
-        px={2}
-        py={1}
-        rounded={'md'}
-        _hover={{
-            textDecoration: 'none',
-            bg: useColorModeValue('purple.100', 'gray.700'),
-        }}>{label}</Text>
-    </GatsbyLink>
-
+        <ScrollLink
+            to={link}
+            spy={true}
+            smooth={true}
+            duration={500}>
+            <Text
+                px={2}
+                py={1}
+                rounded={'md'}
+                _hover={{
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    bg: useColorModeValue('purple.100', 'gray.700'),
+                }}
+            >{label}
+            </Text>
+        </ScrollLink>
 )
 
 const HomeLink = () => (
