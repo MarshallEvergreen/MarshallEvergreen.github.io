@@ -8,7 +8,8 @@ import ExternalLink from "./externalLink";
 
 export default function AboutMeCard() {
     return (
-        <Center padding={10}>
+        <Center py={10}
+                pr={10}>
             <Stack spacing={3}>
                 <Heading as="h1" size="4xl">
                     Hello_World!
