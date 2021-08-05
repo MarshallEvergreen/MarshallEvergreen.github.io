@@ -7,7 +7,7 @@ import {
     useColorModeValue, Flex,
 } from '@chakra-ui/react';
 
-export default function ExperienceCard({title, description, image}) {
+export default function ExperienceCard({title, dates, description, image}) {
     return (
         <Center py={6}>
             <Box
@@ -32,7 +32,7 @@ export default function ExperienceCard({title, description, image}) {
                             fontWeight={800}
                             fontSize={'sm'}
                             letterSpacing={1.1}>
-                            {title}
+                            {dates}
                         </Text>
                         <Text color={'gray.500'}>
                             {description}

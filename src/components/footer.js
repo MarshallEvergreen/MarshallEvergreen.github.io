@@ -10,14 +10,6 @@ import LinkedInButton from "./linkedInButton";
 import GithubButton from "./githubButton";
 import ExternalLink from "./externalLink";
 
-const ListHeader = ({ children }) => {
-    return (
-        <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
-            {children}
-        </Text>
-    );
-};
-
 export default function Footer() {
     return (
         <Box

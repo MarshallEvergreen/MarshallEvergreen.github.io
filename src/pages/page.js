@@ -1,5 +1,5 @@
 import * as React from "react"
-import {Center, ChakraProvider, Collapse, Fade, Flex, ScaleFade, useColorModeValue} from "@chakra-ui/react"
+import {Center, ChakraProvider, Collapse, Flex, useColorModeValue} from "@chakra-ui/react"
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import {useEffect, useState} from "react";

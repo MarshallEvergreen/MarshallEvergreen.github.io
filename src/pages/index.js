@@ -3,17 +3,17 @@ import {SimpleGrid, Stack} from "@chakra-ui/react"
 import MyCard from "../components/myCard";
 import AboutMeCard from "../components/aboutMeCard";
 import Page from "./page";
-import Work from "../components/work";
-import Education from "../components/education";
+import WorkSection from "../components/workSection";
+import EducationSection from "../components/educationSection";
 const Index = () => {
     return <Page>
-        <Stack>
+        <Stack minH={'100vh'}>
             <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10}>
                 <MyCard/>
                 <AboutMeCard/>
             </SimpleGrid>
-            <Education/>
-            <Work/>
+            <EducationSection/>
+            <WorkSection/>
         </Stack>
     </Page>
 }
