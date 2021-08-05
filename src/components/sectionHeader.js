@@ -19,7 +19,7 @@ export default function SectionHeader({number, title}) {
                 fontWeight={800}
                 letterSpacing={1.1}
                 as="h5"
-                color={useColorModeValue('purple.600', 'gray.700')}
+                color={useColorModeValue('purple.600', 'purple.300')}
                 size="lg">
                 {number}
             </Heading>

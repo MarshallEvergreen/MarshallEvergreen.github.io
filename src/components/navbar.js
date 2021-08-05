@@ -9,9 +9,10 @@ import {
     IconButton,
     useDisclosure,
     useColorModeValue,
-    Stack, Image, Spacer
+    Stack, Image, Spacer, useColorMode
 } from '@chakra-ui/react';
-import {HamburgerIcon, CloseIcon} from '@chakra-ui/icons';
+import {HamburgerIcon, CloseIcon, MoonIcon, SunIcon} from '@chakra-ui/icons';
+import MyColours from "../theme/myColors";
 
 const Links = [
     {
@@ -41,6 +42,10 @@ const HomeLink = () => (
 
 export default function Navbar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const navNumbers = useColorModeValue(MyColours.NavigationNumber[0], MyColours.NavigationNumber[1])
+    const navText = useColorModeValue(MyColours.NavigationText[0], MyColours.NavigationText[1])
+    const navTextHover = useColorModeValue(MyColours.NavigationTextHover[0], MyColours.NavigationTextHover[1])
+
     const NavLink = ({ label, link }) => (
         <ScrollLink
             to={link}
@@ -48,6 +53,7 @@ export default function Navbar() {
             smooth={true}
             duration={500}>
             <HStack
+                color={navText}
                 onClick={isOpen ? onClose : onOpen}
                 px={2}
                 py={1}
@@ -55,22 +61,26 @@ export default function Navbar() {
                 transition={'0.3s'}
                 _hover={{
                     cursor: 'pointer',
-                    textDecoration: 'none',
-                    color: useColorModeValue('purple.600', 'gray.700'),
+                    color: navTextHover
                 }}>
-                <Text color={useColorModeValue('purple.600', 'gray.700')}>{label[0]}</Text>
+                <Text color={navNumbers}>{label[0]}</Text>
                 <Text>{label[1]}</Text>
             </HStack>
         </ScrollLink>
     )
+
+    const { colorMode, toggleColorMode } = useColorMode()
+    const navbarBackground = useColorModeValue(MyColours.NavFooter[0], MyColours.NavFooter[1])
+
     return (
         <Box
+            bg={navbarBackground}
             position={'fixed'}
             width={'100%'}
-            zIndex={10}
+            zIndex={1}
             borderBottomWidth={1}
             borderStyle={'solid'}
-            bg={useColorModeValue('white', 'gray.900')} px={4}>
+            px={4}>
             <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
                 <HomeLink/>
                 <Spacer flexGrow={1}/>
@@ -83,6 +93,11 @@ export default function Navbar() {
                             <NavLink label={info['label']} link={info['link']}/>
                         ))}
                     </HStack>
+                    <IconButton
+                        onClick={toggleColorMode}
+                        icon={colorMode === "light" ? <MoonIcon/> : <SunIcon />}
+                        aria-label={'Color Theme'}
+                    />
                     <IconButton
                         size={'md'}
                         icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}

@@ -16,6 +16,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^2.0.1",
     "@chakra-ui/icons": "^1.0.14",
     "@chakra-ui/theme": "^1.9.2",
     "gatsby": "^3.10.2",

@@ -9,13 +9,15 @@ import {
 import LinkedInButton from "./linkedInButton";
 import GithubButton from "./githubButton";
 import ExternalLink from "./externalLink";
+import MyColours from "../theme/myColors";
 
 export default function Footer() {
+    const footerBackground = useColorModeValue(MyColours.NavFooter[0], MyColours.NavFooter[1])
     return (
         <Box
             borderTopWidth={1}
             borderStyle={'solid'}
-            bg={useColorModeValue('white', 'gray.900')}
+            bg={footerBackground}
             color={useColorModeValue('gray.700', 'gray.200')}
             borderColor={useColorModeValue('gray.200', 'gray.700')}>
             <Stack

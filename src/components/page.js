@@ -1,8 +1,15 @@
 import * as React from "react"
-import {Center, ChakraProvider, Collapse, Flex, useColorModeValue} from "@chakra-ui/react"
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
+import {
+    ChakraProvider,
+    Collapse,
+    Flex
+} from "@chakra-ui/react"
+import Footer from "./footer";
+import Navbar from "./navbar";
 import {useEffect, useState} from "react";
+import theme from "../theme/theme";
+
+import PageContent from "./pageContent";
 
 const Page = ({children}) => {
     const [scrollDir, setScrollDir] = useState("scrolling up");
@@ -31,26 +38,22 @@ const Page = ({children}) => {
         };
 
         window.addEventListener("scroll", onScroll);
-
-        console.log(scrollDir);
-
         return () => window.removeEventListener("scroll", onScroll);
     }, [scrollDir]);
-    return <Flex minH={'98vh'} flexDirection={'column'}>
-        <ChakraProvider>
-            <Collapse in={scrollDir === 'scrolling up'}>
-                <Navbar/>
-            </Collapse>
-            <Center
-                paddingTop={{base: '100px', lg: '60px'}}
-                flexGrow={1}
-                bg={useColorModeValue('purple.50', 'gray.900')}
-                color={useColorModeValue('gray.700', 'gray.200')}>
-                {children}
-            </Center>
-            <Footer/>
+
+    return  (
+        <ChakraProvider theme={theme}>
+            <Flex
+                minH={'98vh'}
+                flexDirection={'column'}>
+                <Collapse in={scrollDir === 'scrolling up'}>
+                    <Navbar/>
+                </Collapse>
+                <PageContent children={children}/>
+                <Footer/>
+            </Flex>
         </ChakraProvider>
-    </Flex>
+    )
 }
 
 export default Page

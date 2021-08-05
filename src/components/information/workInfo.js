@@ -1,5 +1,5 @@
-import kratos from '../../images/kratos.png';
-import waters from '../../images/waters.jpg';
+import kratos from '../../images/shimadzu.png';
+import waters from '../../images/waters.png';
 
 const WorkInfo = [
     {

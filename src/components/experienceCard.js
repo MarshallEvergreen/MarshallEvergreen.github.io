@@ -6,14 +6,19 @@ import {
     Stack,
     useColorModeValue, Flex,
 } from '@chakra-ui/react';
+import MyColours from "../theme/myColors";
 
-export default function ExperienceCard({title, dates, description, image}) {
+export default function ExperienceCard({dates, description, image}) {
+    const cardBackground = useColorModeValue(MyColours.CardBackground[0], MyColours.CardBackground[1])
+    const subtext = useColorModeValue(MyColours.SubTextBlock[0], MyColours.SubTextBlock[1])
+
     return (
-        <Center py={6}>
+        <Center
+            py={6}>
             <Box
+                bg={cardBackground}
                 maxW={'445px'}
                 w={'full'}
-                bg={useColorModeValue('white', 'gray.900')}
                 boxShadow={'2xl'}
                 rounded={'md'}
                 p={6}
@@ -34,7 +39,7 @@ export default function ExperienceCard({title, dates, description, image}) {
                             letterSpacing={1.1}>
                             {dates}
                         </Text>
-                        <Text color={'gray.500'}>
+                        <Text color={subtext}>
                             {description}
                         </Text>
                     </Stack>

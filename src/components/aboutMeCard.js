@@ -2,16 +2,22 @@ import * as React from "react"
 import {
     Center,
     Text,
-    Heading, Stack
+    Heading, Stack, useColorModeValue
 } from '@chakra-ui/react';
 import ExternalLink from "./externalLink";
+import MyColours from "../theme/myColors";
 
 export default function AboutMeCard() {
+    const textColors = useColorModeValue(MyColours.TextBlock[0], MyColours.TextBlock[1])
+
     return (
         <Center py={10}
                 pr={10}
                 pl={{base: '10', lg: '0'}}>
-            <Stack spacing={3}>
+            <Stack
+                spacing={3}
+                color={textColors}
+            >
                 <Heading as="h1" size="4xl">
                     Hello_World!
                 </Heading>
