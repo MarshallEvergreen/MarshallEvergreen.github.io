@@ -40,6 +40,9 @@ export default function Footer() {
                         from {" "}
                         <ExternalLink href="https://www.flaticon.com/" text={"www.flaticon.com"}/>
                     </Text>
+                    <Text>Backgrounds customised at {" "}
+                        <ExternalLink href="https://www.svgbackgrounds.com/" text={"SVG Backgrounds"}/>
+                    </Text>
                 </Stack>
                 <HStack
                     justify={{ base: 'center', md:'flex-end' }}>
