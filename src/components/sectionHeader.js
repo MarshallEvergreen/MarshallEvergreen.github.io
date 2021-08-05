@@ -15,6 +15,7 @@ export default function SectionHeader({number, title}) {
         <HStack
             justifyContent={'left'}>
             <Heading
+                p={4}
                 textAlign={'center'}
                 fontWeight={800}
                 letterSpacing={1.1}
