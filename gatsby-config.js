@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
     title: "personal-website",
   },
   plugins: [
@@ -19,7 +18,7 @@ module.exports = {
         lang: `en`,
         start_url: `/`,
         display: `standalone`,
-        icon: "src/images/logo.svg",
+        icon: "src/images/favicon.svg",
       }
     }
   ]

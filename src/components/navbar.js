@@ -14,8 +14,6 @@ import {
 } from '@chakra-ui/react';
 import {HamburgerIcon, CloseIcon, MoonIcon, SunIcon} from '@chakra-ui/icons';
 import MyColours from "../theme/myColors";
-import constellationLight from "../images/Endless-Constellation-Light.svg";
-import constellationDark from "../images/Endless-Constellation-Dark.svg";
 
 const Links = [
     {
