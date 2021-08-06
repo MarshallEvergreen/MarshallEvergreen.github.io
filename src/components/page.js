@@ -46,7 +46,9 @@ const Page = ({children}) => {
             <Flex
                 minH={'98vh'}
                 flexDirection={'column'}>
-                <Collapse in={scrollDir === 'scrolling up'}>
+                <Collapse
+                    unmountOnExit={true}
+                    in={scrollDir === 'scrolling up'}>
                     <Navbar/>
                 </Collapse>
                 <PageContent children={children}/>
