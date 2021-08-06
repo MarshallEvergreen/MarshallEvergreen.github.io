@@ -1,6 +1,7 @@
 import * as React from "react"
 import Scroll, { Link as ScrollLink } from "react-scroll";
-import logo from '../images/logo.svg';
+import lightLogo from '../images/logo-light.svg';
+import darkLogo from '../images/logo-dark.svg';
 import {
     Box,
     Flex,
@@ -13,6 +14,8 @@ import {
 } from '@chakra-ui/react';
 import {HamburgerIcon, CloseIcon, MoonIcon, SunIcon} from '@chakra-ui/icons';
 import MyColours from "../theme/myColors";
+import constellationLight from "../images/Endless-Constellation-Light.svg";
+import constellationDark from "../images/Endless-Constellation-Dark.svg";
 
 const Links = [
     {
@@ -27,24 +30,13 @@ const Links = [
 
 const scroll = Scroll.animateScroll;
 
-const HomeLink = () => (
-    <HStack spacing={8}>
-        <Image
-            onClick={() => scroll.scrollToTop()}
-            cursor={'pointer'}
-            src={logo}
-            minW={'40px'}
-            maxW={'80px'}
-            height={'auto'}
-        />
-    </HStack>
-)
-
 export default function Navbar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const navNumbers = useColorModeValue(MyColours.NavigationNumber[0], MyColours.NavigationNumber[1])
     const navText = useColorModeValue(MyColours.NavigationText[0], MyColours.NavigationText[1])
     const navTextHover = useColorModeValue(MyColours.NavigationTextHover[0], MyColours.NavigationTextHover[1])
+    const { colorMode, toggleColorMode } = useColorMode()
+    const navbarBackground = useColorModeValue(MyColours.NavFooter[0], MyColours.NavFooter[1])
 
     const NavLink = ({ label, link }) => (
         <ScrollLink
@@ -69,8 +61,18 @@ export default function Navbar() {
         </ScrollLink>
     )
 
-    const { colorMode, toggleColorMode } = useColorMode()
-    const navbarBackground = useColorModeValue(MyColours.NavFooter[0], MyColours.NavFooter[1])
+    const HomeLink = () => (
+        <HStack>
+            <Image
+                onClick={() => scroll.scrollToTop()}
+                cursor={'pointer'}
+                src={colorMode === "light" ? lightLogo : darkLogo}
+                minW={'40px'}
+                maxW={'80px'}
+                height={'auto'}
+            />
+        </HStack>
+    )
 
     return (
         <Box

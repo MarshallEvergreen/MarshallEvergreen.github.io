@@ -36,7 +36,7 @@ export default function Footer() {
                         <ExternalLink href="https://chakra-ui.com/" text={"Chakra UI"}/>
                     </Text>
                     <Text>Icons made by {" "}
-                        <ExternalLink href="https://www.flaticon.com/authors/pixel-perfect" text={"Pixel perfect"}/>
+                        <ExternalLink href="https://www.flaticon.com/authors/freepik" text={"Freepik"}/>
                         from {" "}
                         <ExternalLink href="https://www.flaticon.com/" text={"www.flaticon.com"}/>
                     </Text>
