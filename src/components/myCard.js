@@ -12,9 +12,15 @@ import MyColours from "../theme/myColors";
 
 export default function MyCard() {
     const subtext = useColorModeValue(MyColours.SubTextBlock[0], MyColours.SubTextBlock[1])
+    const headerColors = useColorModeValue(MyColours.Header[0], MyColours.Header[1])
+
     return (
         <PersonalCard image={me}>
-            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+            <Heading
+                color={headerColors}
+                fontSize={'2xl'}
+                fontFamily={'body'}
+                fontWeight={500}>
                 Abie Marshall BSc (Hons)
             </Heading>
             <Text color={subtext}>🥇 First Class Physics Graduate</Text>

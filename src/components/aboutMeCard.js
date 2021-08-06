@@ -9,6 +9,7 @@ import MyColours from "../theme/myColors";
 
 export default function AboutMeCard() {
     const textColors = useColorModeValue(MyColours.TextBlock[0], MyColours.TextBlock[1])
+    const headerColors = useColorModeValue(MyColours.Header[0], MyColours.Header[1])
 
     return (
         <Center py={10}
@@ -18,7 +19,10 @@ export default function AboutMeCard() {
                 spacing={3}
                 color={textColors}
             >
-                <Heading as="h1" size="4xl">
+                <Heading
+                    color={headerColors}
+                    as="h1"
+                    size="4xl">
                     Hello_World!
                 </Heading>
                 <Text textAlign={'justify'}>
