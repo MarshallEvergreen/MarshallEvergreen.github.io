@@ -44,8 +44,9 @@ export default function AboutMeCard() {
                     <ExternalLink
                         href="https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2021&id=902"
                         text={"Data Science MSc"}/>
-                    at the University of Edinburgh. My ultimate ambition afterwards is to pursue a career where these
-                    skills can be utilized to tackle some of our biggest environmental challenges. 🌍
+                    at the University of Edinburgh full time between September 2021 - August 2022.
+                    My ultimate ambition afterwards is to pursue a career where these skills can be utilized
+                    to tackle some of our biggest environmental challenges. 🌍
                 </Text>
             </Stack>
         </Center>
