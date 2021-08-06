@@ -18,7 +18,7 @@ module.exports = {
         lang: `en`,
         start_url: `/`,
         display: `standalone`,
-        icon: "src/images/favicon.svg",
+        icon: "src/images/favicon.svg"
       }
     }
   ]

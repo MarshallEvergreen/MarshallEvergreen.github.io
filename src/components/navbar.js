@@ -62,6 +62,7 @@ export default function Navbar() {
     const HomeLink = () => (
         <HStack>
             <Image
+                padding={'5px'}
                 onClick={() => scroll.scrollToTop()}
                 cursor={'pointer'}
                 src={colorMode === "light" ? lightLogo : darkLogo}
