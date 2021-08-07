@@ -20,8 +20,9 @@ export default function PersonalCard({children, image}) {
                     height={'230px'}
                 >
                     <Image
+                        align={'center'}
                         rounded={'lg'}
-                        height={230}
+                        height={268}
                         width={282}
                         objectFit={'cover'}
                         src={image}

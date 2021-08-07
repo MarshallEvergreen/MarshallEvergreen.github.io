@@ -1,5 +1,5 @@
 import * as React from "react"
-import me from './../images/me.jpg';
+import me from '../images/me.jpg';
 import {Heading, Stack, Text, useColorModeValue,} from '@chakra-ui/react';
 import LinkedInButton from "./linkedInButton";
 import GithubButton from "./githubButton";

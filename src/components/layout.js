@@ -42,17 +42,13 @@ const Layout = ({children}) => {
         <>
             <Head/>
             <ChakraProvider theme={theme}>
-                <Flex
-                    minH={'98vh'}
-                    flexDirection={'column'}>
-                    <Collapse
-                        unmountOnExit={true}
-                        in={scrollDir === 'scrolling up'}>
-                        <Navbar/>
-                    </Collapse>
-                    <PageContent children={children}/>
-                    <Footer/>
-                </Flex>
+                <Collapse
+                    unmountOnExit={true}
+                    in={scrollDir === 'scrolling up'}>
+                    <Navbar/>
+                </Collapse>
+                <PageContent children={children}/>
+                <Footer/>
             </ChakraProvider>
         </>
     )

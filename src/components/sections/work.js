@@ -5,7 +5,7 @@ import WorkInfo from "../information/workInfo";
 export default function Work() {
     return (
         <ExperienceSection
-            number={'02.'}
+            number={'03.'}
             title={"Where I've worked"}
             sectionId={'Work'}
             injectedInfo={WorkInfo}/>

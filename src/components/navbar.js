@@ -20,7 +20,11 @@ import MyColours from "../theme/myColors";
 
 const Links = [
     {
-        'label': ['01.', 'Education'],
+        'label': ['01.', 'About'],
+        'link': 'About'
+    },
+    {
+        'label': ['02.', 'Education'],
         'link': 'Education'
     },
     {
@@ -78,10 +82,11 @@ export default function Navbar() {
 
     return (
         <Box
+            position={'absolute'}
             bg={navbarBackground}
             position={'fixed'}
             width={'100%'}
-            zIndex={1}
+            zIndex={10}
             borderBottomWidth={1}
             borderStyle={'solid'}
             px={4}>
