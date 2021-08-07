@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Abie Marshall',
     description:
-        'Abie Marshall is a Data Science Student, first class physics graduate and experienced software engineer specializing in scientific instruments',
+        'Abie Marshall is an MSc data science student, first class physics graduate and experienced software engineer specializing in scientific instruments',
     siteUrl: 'https://abiemarshall.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
@@ -17,8 +17,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: `Abie Marshal`,
-        description: `Software Engineer | Physics Graduate | Data Science Student`,
+        name: `AbieMarshal`,
+        short_name: 'AbieMarshal',
         lang: `en`,
         start_url: `/`,
         display: `standalone`,
