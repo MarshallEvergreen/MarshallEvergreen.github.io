@@ -1,8 +1,8 @@
 import * as React from "react"
-import EducationInfo from "./information/educationInfo";
-import ExperienceSection from "./experienceSection";
+import EducationInfo from "../information/educationInfo";
+import ExperienceSection from "../experienceSection";
 
-export default function EducationSection() {
+export default function Education() {
     return (
         <ExperienceSection
             number={'01.'}

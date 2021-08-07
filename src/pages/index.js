@@ -3,8 +3,8 @@ import {SimpleGrid, Stack} from "@chakra-ui/react"
 import MyCard from "../components/myCard";
 import AboutMeCard from "../components/aboutMeCard";
 import Layout from "../components/layout";
-import WorkSection from "../components/workSection";
-import EducationSection from "../components/educationSection";
+import Work from "../components/sections/work";
+import Education from "../components/sections/education";
 
 const Index = () => {
     return (
@@ -14,8 +14,8 @@ const Index = () => {
                     <MyCard/>
                     <AboutMeCard/>
                 </SimpleGrid>
-                <EducationSection/>
-                <WorkSection/>
+                <Education/>
+                <Work/>
             </Stack>
         </Layout>
     )

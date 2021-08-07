@@ -1,8 +1,8 @@
 import * as React from "react"
-import ExperienceSection from "./experienceSection";
-import WorkInfo from "./information/workInfo";
+import ExperienceSection from "../experienceSection";
+import WorkInfo from "../information/workInfo";
 
-export default function WorkSection() {
+export default function Work() {
     return (
         <ExperienceSection
             number={'02.'}
