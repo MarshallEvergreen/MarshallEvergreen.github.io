@@ -1,11 +1,5 @@
 import * as React from "react"
-import {
-    Box,
-    HStack,
-    Stack,
-    Text,
-    useColorModeValue
-} from '@chakra-ui/react';
+import {Box, HStack, Stack, Text, useColorModeValue} from '@chakra-ui/react';
 import LinkedInButton from "./linkedInButton";
 import GithubButton from "./githubButton";
 import ExternalLink from "./externalLink";
@@ -23,10 +17,10 @@ export default function Footer() {
             <Stack
                 as={Stack}
                 p={4}
-                direction={{ base: 'column', md: 'row' }}
+                direction={{base: 'column', md: 'row'}}
                 spacing={4}
-                justify={{ md: 'space-between' }}
-                align={{ md: 'center' }}>
+                justify={{md: 'space-between'}}
+                align={{md: 'center'}}>
                 <Stack>
                     <Text>© 2021 Abie Marshall. Built by me! Using {" "}
                         <ExternalLink href="https://www.gatsbyjs.com/" text={"Gatsby"}/>
@@ -45,8 +39,8 @@ export default function Footer() {
                     </Text>
                 </Stack>
                 <HStack
-                    justify={{ base: 'center', md:'flex-end' }}>
-                    <LinkedInButton />
+                    justify={{base: 'center', md: 'flex-end'}}>
+                    <LinkedInButton/>
                     <GithubButton/>
                 </HStack>
             </Stack>

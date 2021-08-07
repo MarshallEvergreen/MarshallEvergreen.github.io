@@ -23,7 +23,8 @@ module.exports = {
         start_url: `/`,
         display: `standalone`,
         icon: "src/images/favicon.svg"
-      }
-    }
+      },
+    },
+    "gatsby-plugin-react-helmet"
   ]
 }

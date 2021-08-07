@@ -1,9 +1,5 @@
 import * as React from "react"
-import {
-    Center,
-    Text,
-    Heading, Stack, useColorModeValue
-} from '@chakra-ui/react';
+import {Center, Heading, Stack, Text, useColorModeValue} from '@chakra-ui/react';
 import ExternalLink from "./externalLink";
 import MyColours from "../theme/myColors";
 
@@ -36,9 +32,12 @@ export default function AboutMeCard() {
                     from relevant parties and improving communication between departments.
                 </Text>
                 <Text textAlign={'justify'}>
-                    What I am most proud of during this time is improving the self- diagnostic abilities of the instruments
-                    and automating previously complex setup procedures which made these instruments more accessible to less
-                    technical users! 😀 The systems I have contributed towards have been recognised as part of the solution for the Pfizer –
+                    What I am most proud of during this time is improving the self- diagnostic abilities of the
+                    instruments
+                    and automating previously complex setup procedures which made these instruments more accessible to
+                    less
+                    technical users! 😀 The systems I have contributed towards have been recognised as part of the
+                    solution for the Pfizer –
                     BioNTech COVID-19 vaccine! 💉
                 </Text>
                 <Text textAlign={'justify'}>

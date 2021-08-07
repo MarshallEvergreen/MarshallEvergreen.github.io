@@ -1,11 +1,5 @@
 import * as React from "react"
-import {
-    Box,
-    Center,
-    Text,
-    Stack,
-    useColorModeValue, Flex,
-} from '@chakra-ui/react';
+import {Box, Center, Flex, Stack, Text, useColorModeValue,} from '@chakra-ui/react';
 import MyColours from "../theme/myColors";
 
 export default function ExperienceCard({dates, description, image}) {

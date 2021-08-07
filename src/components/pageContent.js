@@ -5,7 +5,7 @@ import constellationLight from "../images/Endless-Constellation-Light.svg"
 
 export default function PageContent({children}) {
 
-    const { colorMode } = useColorMode()
+    const {colorMode} = useColorMode()
 
     return (
         <Center

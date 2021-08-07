@@ -3,7 +3,7 @@ import EducationInfo from "./information/educationInfo";
 import ExperienceSection from "./experienceSection";
 
 export default function EducationSection() {
-    return(
+    return (
         <ExperienceSection
             number={'01.'}
             title={"What I've studied"}

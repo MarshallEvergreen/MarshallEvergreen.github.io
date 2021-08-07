@@ -1,10 +1,5 @@
 import * as React from "react"
-import {
-    Box,
-    Center,
-    Stack,
-    Image, useColorModeValue,
-} from '@chakra-ui/react';
+import {Box, Center, Image, Stack, useColorModeValue,} from '@chakra-ui/react';
 import MyColours from "../theme/myColors";
 
 export default function PersonalCard({children, image}) {
