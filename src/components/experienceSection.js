@@ -15,7 +15,6 @@ import ExperienceCard from "./experienceCard";
 
 export default function ExperienceSection({number, title, sectionId, injectedInfo}) {
     const orientation = useBreakpointValue({base: 'horizontal', md: 'vertical'})
-    const align = useBreakpointValue({base: 'center', md: 'start'})
     const { colorMode } = useColorMode()
 
     return (
@@ -30,7 +29,6 @@ export default function ExperienceSection({number, title, sectionId, injectedInf
                 <SectionHeader number={number} title={title}/>
                 <Tabs
                     orientation={orientation}
-                    align={align}
                     colorScheme={colorMode === "light" ? 'purple' : 'green' }>
                     <TabList>
                         {injectedInfo.map((info) => (
