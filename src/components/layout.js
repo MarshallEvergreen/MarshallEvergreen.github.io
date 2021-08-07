@@ -1,17 +1,14 @@
 import * as React from "react"
-import {
-    ChakraProvider,
-    Collapse,
-    Flex
-} from "@chakra-ui/react"
+import {useEffect, useState} from "react"
+import {ChakraProvider, Collapse, Flex} from "@chakra-ui/react"
 import Footer from "./footer";
 import Navbar from "./navbar";
-import {useEffect, useState} from "react";
 import theme from "../theme/theme";
 
 import PageContent from "./pageContent";
+import Head from "./head";
 
-const Page = ({children}) => {
+const Layout = ({children}) => {
     const [scrollDir, setScrollDir] = useState("scrolling up");
     useEffect(() => {
         const threshold = 75;
@@ -41,21 +38,24 @@ const Page = ({children}) => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [scrollDir]);
 
-    return  (
-        <ChakraProvider theme={theme}>
-            <Flex
-                minH={'98vh'}
-                flexDirection={'column'}>
-                <Collapse
-                    unmountOnExit={true}
-                    in={scrollDir === 'scrolling up'}>
-                    <Navbar/>
-                </Collapse>
-                <PageContent children={children}/>
-                <Footer/>
-            </Flex>
-        </ChakraProvider>
+    return (
+        <>
+            <Head/>
+            <ChakraProvider theme={theme}>
+                <Flex
+                    minH={'98vh'}
+                    flexDirection={'column'}>
+                    <Collapse
+                        unmountOnExit={true}
+                        in={scrollDir === 'scrolling up'}>
+                        <Navbar/>
+                    </Collapse>
+                    <PageContent children={children}/>
+                    <Footer/>
+                </Flex>
+            </ChakraProvider>
+        </>
     )
 }
 
-export default Page
+export default Layout
