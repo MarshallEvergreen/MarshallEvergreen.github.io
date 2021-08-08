@@ -9,28 +9,29 @@ import {
     TabPanels,
     Tabs,
     useBreakpointValue,
-    useColorMode
+    useColorModeValue
 } from '@chakra-ui/react';
 import SectionHeader from "./sectionHeader";
 import ExperienceCard from "./experienceCard";
+import MyColours from "../theme/myColors";
 
 export default function ExperienceSection({number, title, sectionId, injectedInfo}) {
+    const colorScheme = useColorModeValue(MyColours.colorScheme[0], MyColours.colorScheme[1])
     const orientation = useBreakpointValue({base: 'horizontal', md: 'vertical'})
-    const {colorMode} = useColorMode()
 
     return (
         <Center
-            paddingTop={{base: '50px', md: '100px'}}
-            paddingBottom={'4px'}
+            minH={'75vh'}
             id={sectionId}
         >
             <Stack
+                minH={'inherit'}
                 minW={{base: '0', md: '720px'}}
             >
                 <SectionHeader number={number} title={title}/>
                 <Tabs
                     orientation={orientation}
-                    colorScheme={colorMode === "light" ? 'purple' : 'green'}>
+                    colorScheme={colorScheme}>
                     <TabList>
                         {injectedInfo.map((info) => (
                             <Tab>{info['title']}</Tab>

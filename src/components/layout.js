@@ -1,6 +1,6 @@
 import * as React from "react"
 import {useEffect, useState} from "react"
-import {ChakraProvider, Collapse, Flex} from "@chakra-ui/react"
+import {ChakraProvider, Collapse} from "@chakra-ui/react"
 import Footer from "./footer";
 import Navbar from "./navbar";
 import theme from "../theme/theme";

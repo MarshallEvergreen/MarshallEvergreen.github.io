@@ -10,9 +10,10 @@ export default function PageContent({children}) {
     return (
         <Center
             bgImage={colorMode === "light" ? constellationLight : constellationDark}
-            paddingTop={{base: '100px', lg: '60px'}}
             flexGrow={1}>
-            <Container maxW={'7xl'}>
+            <Container
+                marginY={{base: '50px', md: '100px', lg: '150px'}}
+                maxW={'7xl'}>
                 {children}
             </Container>
         </Center>

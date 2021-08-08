@@ -82,7 +82,6 @@ export default function Navbar() {
 
     return (
         <Box
-            position={'absolute'}
             bg={navbarBackground}
             position={'fixed'}
             width={'100%'}

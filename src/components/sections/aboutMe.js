@@ -8,7 +8,7 @@ export default function AboutMe() {
     return (
         <Stack
             id={'About'}
-            minH={'95vh'}>
+            minH={'100vh'}>
             <SectionHeader number={'01.'} title={'About me'}/>
             <SimpleGrid columns={{base: 1, lg: 2}} spacing={10}>
                 <MyCard/>

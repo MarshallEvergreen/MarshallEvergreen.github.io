@@ -1,11 +1,14 @@
 import * as React from "react";
-import {Button, Container, Heading, Stack, Text, useColorModeValue,} from '@chakra-ui/react';
+import {Button, Container, Heading, Link, Stack, Text, useColorModeValue,} from '@chakra-ui/react';
 import MyColours from "../../theme/myColors";
+import {EmailIcon} from "@chakra-ui/icons";
 
-export default function CallToActionWithVideo() {
+export default function Hero() {
     const subtextColors = useColorModeValue(MyColours.SubTextBlock[0], MyColours.SubTextBlock[1])
     const textColors = useColorModeValue(MyColours.TextBlock[0], MyColours.TextBlock[1])
     const headerColors = useColorModeValue(MyColours.Header[0], MyColours.Header[1])
+    const colorScheme = useColorModeValue(MyColours.colorScheme[0], MyColours.colorScheme[1])
+
     return (
         <Container minH={'95vh'} maxW={'inherit'}>
             <Stack
@@ -30,27 +33,34 @@ export default function CallToActionWithVideo() {
                         <br/>
                         <Text as={'span'}
                               color={subtextColors}
-                              fontSize={{base: '3xl', sm: '4xl', lg: '5xl'}}>I'm good at scientific programming.
+                              fontSize={{base: '3xl', sm: '4xl', lg: '5xl'}}>I create software solutions for science.
                         </Text>
                     </Heading>
-                    <Text maxW={'400px'} color={textColors}>
+                    <Text
+                        maxW={{base: '100%', md: '50%'}}
+                        color={textColors}>
                         I'm a first class physics graduate and experienced software engineer
-                        with a specialisation in designing and implementing solutions for scientific instruments.
+                        with a specialisation in researching, designing and implementing solutions for scientific
+                        instruments.
                         Currently I'm studying an MSc in Data Science at the University of Edinburgh.
                     </Text>
                     <Stack
                         spacing={{base: 4, sm: 6}}
                         direction={{base: 'column', sm: 'row'}}>
-                        <Button
-                            rounded={'full'}
-                            size={'lg'}
-                            fontWeight={'normal'}
-                            px={6}
-                            colorScheme={'red'}
-                            bg={'red.400'}
-                            _hover={{bg: 'red.500'}}>
-                            Get In Touch
-                        </Button>
+                        <Link
+                        href={'mailto:abiemarshall94@gmail.com'}
+                        >
+                            <Button
+                                variant={'outline'}
+                                size={'lg'}
+                                fontWeight={'normal'}
+                                px={6}
+                                colorScheme={colorScheme}
+                                rightIcon={<EmailIcon/>}
+                            >
+                                Get In Touch
+                            </Button>
+                        </Link>
                     </Stack>
                 </Stack>
             </Stack>
