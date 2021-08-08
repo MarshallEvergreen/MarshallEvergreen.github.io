@@ -1,6 +1,8 @@
 import * as React from "react"
-import {Box, Heading, HStack, useColorModeValue} from "@chakra-ui/react";
+import {Box, HStack, Text, useColorModeValue} from "@chakra-ui/react";
 import MyColours from "../theme/myColors";
+import CustomHeader from "./heading";
+import HeaderSizes from "../theme/headerSizes";
 
 
 export default function SectionHeader({number, title}) {
@@ -19,25 +21,21 @@ export default function SectionHeader({number, title}) {
     return (
         <HStack
             justifyContent={'left'}>
-            <Heading
-                p={4}
-                textAlign={'center'}
-                fontWeight={800}
-                letterSpacing={1.1}
-                as="h5"
-                color={navNumbers}
-                size="lg">
-                {number}
-            </Heading>
-            <Heading
-                color={navText}
-                textAlign={'center'}
-                fontWeight={800}
-                letterSpacing={1.1}
-                as="h4"
-                size="lg">
-                {title}
-            </Heading>
+            <CustomHeader
+                textAlign={'center'}>
+                <Text
+                    fontSize={HeaderSizes.small}
+                    as={'span'}
+                    color={navNumbers}>
+                    {number + ' '}
+                </Text>
+                <Text
+                    fontSize={HeaderSizes.small}
+                    as={'span'}
+                    color={navText}>
+                    {title}
+                </Text>
+            </CustomHeader>
             <Line/>
         </HStack>
     )

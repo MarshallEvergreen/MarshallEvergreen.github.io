@@ -1,7 +1,6 @@
 import * as React from "react"
 import {
     Center,
-    Image,
     Stack,
     Tab,
     TabList,
@@ -41,12 +40,7 @@ export default function ExperienceSection({number, title, sectionId, injectedInf
                     <TabPanels>
                         {injectedInfo.map((info) => (
                             <TabPanel>
-                                <ExperienceCard
-                                    title={info.title}
-                                    dates={info.dates}
-                                    description={info.description}
-                                    image={<Image src={info.image}/>}
-                                />
+                                <ExperienceCard info={info}/>
                             </TabPanel>
                         ))}
                     </TabPanels>

@@ -1,5 +1,5 @@
 import * as React from "react"
-import {Center, Heading, Stack, Text, useColorModeValue} from '@chakra-ui/react';
+import {Center, Stack, Text, useColorModeValue} from '@chakra-ui/react';
 import ExternalLink from "./externalLink";
 import MyColours from "../theme/myColors";
 
@@ -15,7 +15,8 @@ export default function AboutMeCard() {
                 color={textColors}
             >
                 <Text textAlign={'justify'}>
-                    Hello! My name is Abie and I'm an experienced full-stack software engineer and first-class physics graduate, currently based in
+                    Hello! My name is Abie and I'm an experienced full-stack software engineer and first-class physics
+                    graduate, currently based in
                     Edinburgh. 🏰
                 </Text>
                 <Text textAlign={'justify'}>

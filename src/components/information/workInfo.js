@@ -4,14 +4,42 @@ import waters from '../../images/waters.png';
 const WorkInfo = [
     {
         'title': 'Kratos Analytical',
-        'dates': 'Dec 2020 - August 2021',
-        'description': '',
+        'position': 'Software Engineer',
+        'dates': 'Dec 2020 - Aug 2021',
+        'summary': 'Responsible for feasibility studies and driving the adoption of technologies/practices which improved the existing instrument control software and software delivery process.',
+        'bulletPoints': [
+            'Drove the adoption of modern practices and upskilled the developers around me through workshops, demonstrations and presentations',
+            'Developed an automated test framework which was shown to have the capability to automate at least 50% of the existing manual acceptance testing',
+            'Incorporated Azure into the existing infrastructure to improve CI/CD',
+            'Improved the documentation of the existing codebase by introducing and teaching Sphinx',
+            'Wrote multiple sphinx extensions in python that integrated with the test framework and documentation to provide living metrics and further analysis'
+        ],
         'image': kratos
     },
     {
-        'title': 'Waters Corporation',
+        'title': 'Waters',
+        'position': 'Junior Software Engineer',
         'dates': 'Nov 2017 - Dec 2020',
-        'description': '',
+        'summary': 'Responsible for the design and implementation of Mass Spectrometer control software.',
+        'bulletPoints': [
+            'C++ development within a microservice architecture supporting multiple products',
+            'Developing deep simulations of real time data and instrument behaviour',
+            'Pioneered the use of python for developing new data analysis techniques, I developed an algorithm which evaluated background noise and used confidence intervals to detect signals.',
+            'Investigated how machine learning could be utilised to improve existing calibration procedures and to predict when components need re-calibrating or replacing.',
+            'Researched Bayesian statistical methods for improving peak identification and curve fitting. '
+        ],
+        'image': waters
+    },
+    {
+        'title': 'Waters',
+        'position': 'Development Scientist',
+        'dates': 'Jun 2016 - Sep 2016',
+        'summary': 'Involved in the development process and testing of a new mass spectrometer.',
+        'bulletPoints': [
+            'Carried out component and sub-system testing on a prototype mass spectrometer',
+            'Gained knowledge in maintaining mass spectrometry systems, specifically with GC-MS systems',
+            'Suggested design improvements in relation to potential faults and liaised with mechanical engineers in Singapore about these issues'
+        ],
         'image': waters
     }
 ]
