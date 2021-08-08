@@ -6,13 +6,13 @@ const WorkInfo = [
         'title': 'Kratos Analytical',
         'position': 'Software Engineer',
         'dates': 'Dec 2020 - Aug 2021',
-        'summary': 'Responsible for feasibility studies and driving the adoption of technologies/practices which improved the existing instrument control software and software delivery process.',
+        'summary': 'Responsible for feasibility studies and driving the adoption of new technologies/practices.',
         'bulletPoints': [
-            'Drove the adoption of modern practices and upskilled the developers around me through workshops, demonstrations and presentations',
-            'Developed an automated test framework which was shown to have the capability to automate at least 50% of the existing manual acceptance testing',
+            'Drove the adoption of modern practices and held workshops, demonstrations and presentations',
+            'Developed an automated test framework which had the capability to automate at least 50% of the existing manual acceptance testing',
             'Incorporated Azure into the existing infrastructure to improve CI/CD',
-            'Improved the documentation of the existing codebase by introducing and teaching Sphinx',
-            'Wrote multiple sphinx extensions in python that integrated with the test framework and documentation to provide living metrics and further analysis'
+            'Improved the documentation of the codebase by introducing and teaching Sphinx',
+            'Wrote sphinx extensions that integrated with the test framework and documentation to provide living metrics for further analysis'
         ],
         'image': kratos
     },
