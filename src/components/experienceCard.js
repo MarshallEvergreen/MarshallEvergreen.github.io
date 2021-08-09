@@ -14,7 +14,7 @@ export default function ExperienceCard({info}) {
     return (
         <Box
             bg={cardBackground}
-            maxW={'600px'}
+            maxW={'500px'}
             w={'full'}
             boxShadow={'2xl'}
             rounded={'md'}
