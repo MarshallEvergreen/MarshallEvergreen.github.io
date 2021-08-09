@@ -40,7 +40,10 @@ export default function ExperienceSection({number, title, sectionId, injectedInf
                     <TabPanels>
                         {injectedInfo.map((info) => (
                             <TabPanel>
-                                <ExperienceCard info={info}/>
+                                <Center
+                                    py={6}>
+                                    <ExperienceCard info={info}/>
+                                </Center>
                             </TabPanel>
                         ))}
                     </TabPanels>
