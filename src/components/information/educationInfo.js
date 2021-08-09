@@ -6,7 +6,7 @@ const EducationInfo = [
         'title': 'MSc Data Science',
         'dates': '2021 - 2022',
         'summary': 'Studying how to efficiently find patterns in these vast streams of data. ' +
-            'Hoping to tailor my dissertation towards an environmental challenge where these skills can be applied.' +
+            'Hoping to tailor my dissertation towards an environmental challenge where these skills can be applied. ' +
             'Taking modules on:',
         'bulletPoints': [
             'Machine Learning',

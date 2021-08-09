@@ -31,10 +31,10 @@ export default function AboutMeCard() {
                     to tackle some of our biggest environmental challenges. 🌍
                 </Text>
                 <Text textAlign={'justify'}>
-                    Until recently I worked for scientific instrument companies where I researched, designed
-                    and implemented instrument control software and data science solutions for Mass Spectrometers. 🔬
-                    My background and knowledge allowed me to excel in interpreting scientific and software concepts
-                    from relevant parties and improving communication between departments.
+                    Until recently I worked for analytical instrumentation companies where I researched, designed
+                    and implemented instrument control software and data science solutions. 🔬
+                    My background allowed me to excel in interpreting both scientific and software concepts,
+                    helping to improve communication between departments.
                 </Text>
                 <Text textAlign={'justify'}>
                     What I am most proud of during this time is improving the self- diagnostic abilities of the
