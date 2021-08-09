@@ -71,7 +71,7 @@ export default function SkillsGrid() {
                 <SkillIcon icon={'gradle-plain'}/>
             </SkillGrid>
             <SkillGrid
-                heading={'Tools I\'ve used to build stuff include...'}>
+                heading={'Tools I\'ve used to build awesome stuff include...'}>
                 <SkillIcon icon={'git-plain-wordmark'}/>
                 <SkillIcon icon={'bitbucket-plain-wordmark'}/>
                 <SkillIcon icon={'github-plain'}/>
