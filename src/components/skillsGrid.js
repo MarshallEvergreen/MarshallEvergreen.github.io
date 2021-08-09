@@ -82,7 +82,8 @@ export default function SkillsGrid() {
                 <SkillIcon icon={'visualstudio-plain'} link={'https://visualstudio.microsoft.com/'}/>
                 <SkillIcon icon={'vscode-plain'} link={'https://code.visualstudio.com/'}/>
                 <SkillIcon icon={'ubuntu-plain'} link={'https://ubuntu.com/'}/>
-                <SkillIcon icon={'windows8-plain'} link={'https://www.microsoft.com/en-gb/software-download/windows10ISO'}/>
+                <SkillIcon icon={'windows8-plain'}
+                           link={'https://www.microsoft.com/en-gb/software-download/windows10ISO'}/>
                 <SkillIcon icon={'gatsby-plain'} link={'https://www.gatsbyjs.com/'}/>
             </SkillGrid>
         </Accordion>

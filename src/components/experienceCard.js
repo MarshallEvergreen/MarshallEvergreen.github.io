@@ -1,5 +1,17 @@
 import * as React from "react"
-import {Box, Flex, HStack, Image, List, ListIcon, ListItem, Stack, Text, useColorModeValue,} from '@chakra-ui/react';
+import {
+    Box,
+    Flex,
+    HStack,
+    Image,
+    Link,
+    List,
+    ListIcon,
+    ListItem,
+    Stack,
+    Text,
+    useColorModeValue,
+} from '@chakra-ui/react';
 import MyColours from "../theme/myColors";
 import {MdCheckCircle} from "react-icons/all";
 import CustomHeader from "./heading";
@@ -10,6 +22,7 @@ export default function ExperienceCard({info}) {
     const subtext = useColorModeValue(MyColours.SubTextBlock[0], MyColours.SubTextBlock[1])
     const navNumbers = useColorModeValue(MyColours.NavigationNumber[0], MyColours.NavigationNumber[1])
     const navText = useColorModeValue(MyColours.NavigationText[0], MyColours.NavigationText[1])
+    const navHover = useColorModeValue(MyColours.NavigationTextHover[0], MyColours.NavigationTextHover[1])
 
     return (
         <Box
@@ -32,16 +45,24 @@ export default function ExperienceCard({info}) {
                 </Flex>
                 <Stack>
                     {(info.position) ? (
-                            <CustomHeader
-                            >
+                            <CustomHeader>
                                 <Text
                                     as={'span'}
                                     color={navNumbers}
-                                    fontSize={HeaderSizes.xsmall}>{info.position}</Text>
-                                <Text
-                                    as={'span'}
+                                    fontSize={HeaderSizes.xsmall}>{info.position}
+                                </Text>
+                                <Link
+                                    isExternal={true}
+                                    href={info.link}
                                     color={navText}
-                                    fontSize={HeaderSizes.xsmall}>{' @ ' + info.title}</Text>
+                                    fontSize={HeaderSizes.xsmall}
+                                    transition={'0.3s'}
+                                    _hover={{
+                                        cursor: 'pointer',
+                                        color: navHover
+                                    }}>
+                                    {' @ ' + info.title}
+                                </Link>
                             </CustomHeader>
                         ) :
                         null

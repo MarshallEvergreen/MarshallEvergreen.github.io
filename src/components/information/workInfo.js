@@ -5,6 +5,7 @@ const WorkInfo = [
     {
         'title': 'Kratos Analytical',
         'position': 'Software Engineer',
+        'link': 'https://www.kratos.com/',
         'dates': 'Dec 2020 - Aug 2021',
         'summary': 'Responsible for feasibility studies and driving the adoption of new technologies/practices. ' +
             'Worked with C#, Azure, Python, Specflow, Gherkin, Appium and more!',
@@ -18,6 +19,7 @@ const WorkInfo = [
     {
         'title': 'Waters',
         'position': 'Junior Software Engineer',
+        'link': 'https://www.waters.com/',
         'dates': 'Nov 2017 - Dec 2020',
         'summary': 'Responsible for the design and implementation of Mass Spectrometer control software. Working within a ' +
             'microservice architecture with C++, C#, Python, Lua, Docker, Angular2+ and more!',
@@ -32,6 +34,7 @@ const WorkInfo = [
     {
         'title': 'Waters',
         'position': 'Development Scientist',
+        'link': 'https://www.waters.com/',
         'dates': 'Jun 2016 - Sep 2016',
         'summary': 'Involved in the development process and testing of a new mass spectrometer.',
         'bulletPoints': [

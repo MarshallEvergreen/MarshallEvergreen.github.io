@@ -10,7 +10,7 @@ const MyColours = {
 
     'NavigationNumber': ["purple.600", "green.300"],
     'NavigationText': ["gray.400", "blue.200"],
-    'NavigationTextHover': ["purple.600", "green.200"],
+    'NavigationTextHover': ["purple.600", "green.300"],
 
     'colorScheme': ["purple", "green"]
 }

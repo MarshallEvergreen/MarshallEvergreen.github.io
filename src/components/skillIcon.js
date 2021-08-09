@@ -1,5 +1,5 @@
 import * as React from "react"
-import {Center, Link, Text, useColorModeValue} from "@chakra-ui/react";
+import {Center, Link, useColorModeValue} from "@chakra-ui/react";
 import MyColours from "../theme/myColors";
 import HeaderSizes from "../theme/headerSizes";
 
