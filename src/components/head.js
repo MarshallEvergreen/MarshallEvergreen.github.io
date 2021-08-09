@@ -39,7 +39,7 @@ const Head = ({title, description, image}) => {
     return (
         <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
             <html lang="en"/>
-
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"/>
             <meta name="description" content={seo.description}/>
             <meta name="image" content={seo.image}/>
 

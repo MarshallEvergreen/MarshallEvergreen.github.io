@@ -4,7 +4,7 @@ const MyColours = {
 
     'NavFooter': ["white", "gray.800"],
 
-    'Header': ["gray.800", "green.100"],
+    'Header': ["gray.700", "green.100"],
     'TextBlock': ["gray.600", "blue.200"],
     'SubTextBlock': ["gray.500", "blue.100"],
 

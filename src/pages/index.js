@@ -4,6 +4,7 @@ import Work from "../components/sections/work";
 import Education from "../components/sections/education";
 import Hero from "../components/sections/hero";
 import AboutMe from "../components/sections/aboutMe";
+import Skills from "../components/sections/skills";
 
 const Index = () => {
     return (
@@ -12,6 +13,7 @@ const Index = () => {
             <AboutMe/>
             <Education/>
             <Work/>
+            <Skills/>
         </Layout>
     )
 }
