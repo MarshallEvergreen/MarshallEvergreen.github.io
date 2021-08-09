@@ -28,7 +28,7 @@ const Links = [
         'link': 'Education'
     },
     {
-        'label': ['02.', 'Work'],
+        'label': ['03.', 'Work'],
         'link': 'Work'
     }
 ]
