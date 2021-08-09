@@ -1,14 +1,16 @@
 import * as React from "react"
-import {Center, Text, useColorModeValue} from "@chakra-ui/react";
+import {Center, Link, Text, useColorModeValue} from "@chakra-ui/react";
 import MyColours from "../theme/myColors";
 import HeaderSizes from "../theme/headerSizes";
 
-export default function SkillIcon({icon}) {
+export default function SkillIcon({icon, link}) {
     const color = useColorModeValue(MyColours.NavigationText[0], MyColours.NavigationText[1])
     const hoverColor = useColorModeValue(MyColours.NavigationTextHover[0], MyColours.NavigationTextHover[1])
     return (
         <Center>
-            <Text
+            <Link
+                isExternal={true}
+                href={link}
                 color={color}
                 fontSize={HeaderSizes.large}
                 className={"devicon-" + icon}
@@ -17,7 +19,8 @@ export default function SkillIcon({icon}) {
                 _hover={{
                     cursor: 'pointer',
                     color: hoverColor
-                }}/>
+                }}>
+            </Link>
         </Center>
     )
 }
