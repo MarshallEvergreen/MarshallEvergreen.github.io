@@ -24,8 +24,8 @@ export default function ExperienceSection({number, title, sectionId, injectedInf
             id={sectionId}
         >
             <Stack
-                minH={'inherit'}
-                minW={{base: '0', md: '720px'}}
+                minW={{base: '0', md: '800px'}}
+                minH={'750px'}
             >
                 <SectionHeader number={number} title={title}/>
                 <Tabs
