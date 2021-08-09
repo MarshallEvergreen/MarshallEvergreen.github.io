@@ -30,10 +30,6 @@ const Links = [
     {
         'label': ['03.', 'Work'],
         'link': 'Work'
-    },
-    {
-        'label': ['04.', 'Skills'],
-        'link': 'Skills'
     }
 ]
 

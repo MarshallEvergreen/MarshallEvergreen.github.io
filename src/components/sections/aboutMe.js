@@ -3,6 +3,7 @@ import SectionHeader from "../sectionHeader";
 import {SimpleGrid, Stack} from "@chakra-ui/react";
 import MyCard from "../myCard";
 import AboutMeCard from "../aboutMeCard";
+import SkillsGrid from "../skillsGrid";
 
 export default function AboutMe() {
     return (
@@ -14,6 +15,7 @@ export default function AboutMe() {
                 <MyCard/>
                 <AboutMeCard/>
             </SimpleGrid>
+            <SkillsGrid/>
         </Stack>
     )
 }

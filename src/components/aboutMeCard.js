@@ -37,8 +37,7 @@ export default function AboutMeCard() {
                     helping to improve communication between departments.
                 </Text>
                 <Text textAlign={'justify'}>
-                    What I am most proud of during this time is improving the self- diagnostic abilities of the
-                    instruments
+                    I am most proud of improving the self- diagnostic abilities of the instruments
                     and automating previously complex setup procedures which made these instruments more accessible to
                     less
                     technical users! 😀 The systems I have contributed towards have been recognised as part of the

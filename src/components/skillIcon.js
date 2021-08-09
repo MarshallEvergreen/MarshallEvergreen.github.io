@@ -10,7 +10,7 @@ export default function SkillIcon({icon}) {
         <Center>
             <Text
                 color={color}
-                fontSize={HeaderSizes.medium}
+                fontSize={HeaderSizes.large}
                 className={"devicon-" + icon}
                 rounded={'md'}
                 transition={'0.3s'}
