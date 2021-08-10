@@ -1,7 +1,6 @@
 import * as React from "react"
 import {Center, Link, useColorModeValue} from "@chakra-ui/react";
 import MyColours from "../theme/myColors";
-import HeaderSizes from "../theme/headerSizes";
 
 export default function SkillIcon({icon, link}) {
     const color = useColorModeValue(MyColours.NavigationText[0], MyColours.NavigationText[1])
@@ -12,7 +11,7 @@ export default function SkillIcon({icon, link}) {
                 isExternal={true}
                 href={link}
                 color={color}
-                fontSize={HeaderSizes.large}
+                fontSize={{base: '5xl', md: '5xl', lg: '6xl'}}
                 className={"devicon-" + icon}
                 rounded={'md'}
                 transition={'0.3s'}
