@@ -47,7 +47,7 @@ export default function Hero() {
                         spacing={{base: 4, sm: 6}}
                         direction={{base: 'column', sm: 'row'}}>
                         <Link
-                            href={'mailto:abiemarshall94@gmail.com'}
+                            href={'mailto:abiemarshall.dev@gmail.com'}
                         >
                             <Button
                                 variant={'outline'}
