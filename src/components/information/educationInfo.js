@@ -7,13 +7,13 @@ const EducationInfo = [
         'dates': '2021 - 2022',
         'summary': 'Studying how to efficiently find patterns in these vast streams of data. ' +
             'Hoping to tailor my dissertation towards an environmental challenge where these skills can be applied. ' +
-            'Taking modules on:',
+            'Current modules:',
         'bulletPoints': [
-            'Machine Learning',
-            'Statistics',
-            'Optimization',
-            'Databases',
-            'Data Management'],
+            'INFR11130 Machine Learning and Pattern Recognition',
+            'MATH11177 Bayesian Theory',
+            'INFR11130 Image and Vision Computing',
+            'INFR11176 Fundamentals of Data Management',
+            'INFR11136 Informatics Research Review'],
         'image': edinburgh
     },
     {
