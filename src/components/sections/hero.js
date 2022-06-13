@@ -38,10 +38,11 @@ export default function Hero() {
                     <Text
                         maxW={{base: '100%', md: '50%'}}
                         color={textColors}>
-                        I'm a first class physics graduate and experienced software engineer
-                        with a specialisation in researching, designing and implementing solutions for scientific
-                        instruments.
-                        Currently I'm studying an MSc in Data Science at the University of Edinburgh.
+                        Will complete an MSc in Data Science in August 2022 which I have tailored to combine
+                        two fields I am passionate about: Earth Observation and Machine Learning. Currently working
+                        part time as an Earth Observation Data Scientist. I'm a first class physics graduate
+                        and experienced software engineer with a previous specialisation in researching, designing and
+                        implementing solutions for scientific instruments.
                     </Text>
                     <Stack
                         spacing={{base: 4, sm: 6}}

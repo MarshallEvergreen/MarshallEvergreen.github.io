@@ -1,7 +1,25 @@
 import kratos from '../../images/shimadzu.png';
 import waters from '../../images/waters.png';
+import earth_blox from '../../images/earth_blox.png'
 
 const WorkInfo = [
+    {
+        'title': 'Earth Blox',
+        'position': 'Data Scientist',
+        'link': 'https://www.earthblox.io/',
+        'dates': 'March 2022 - present (Part Time)',
+        'summary': 'Data scientist at a fast paced startup aiming to make earth observation accessible to everyone, ' +
+            'regardless of expertise. I support the development of new earth observation workflows ' +
+            'by developing data science pipelines and prototyping new algorithms.',
+        'bulletPoints': [
+            'Collated historical windthrow events from the Copernicus Emergency Management Service to facilitate ' +
+            'development of new windthrow algorithms in Sentinel-1 data.',
+            'Developed automated workflows to scrape, encode and create training data from available earth engine ' +
+            'functions and image collections IDs. Developed algorithms to recommend useful earth engine collections ' +
+            'to users based on previous workflow usages.'
+        ],
+        'image': earth_blox
+    },
     {
         'title': 'Kratos Analytical',
         'position': 'Software Engineer',

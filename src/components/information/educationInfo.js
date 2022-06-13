@@ -5,15 +5,17 @@ const EducationInfo = [
     {
         'title': 'MSc Data Science',
         'dates': '2021 - 2022',
-        'summary': 'Studying how to efficiently find patterns in these vast streams of data. ' +
-            'Hoping to tailor my dissertation towards an environmental challenge where these skills can be applied. ' +
-            'Current modules:',
+        'summary': 'Developing a thorough understanding of machine learning/statistical methodologies and how to apply ' +
+            'these to remotely sensed data. For my dissertation, Segmentation of Windthrow in High Resolution Capella ' +
+            'SAR Images Using Fully Convolutional Networks, I am developing tools to automate the processing of ' +
+            'SAR imagery into a format suitable for deep learning and developing novel segmentation algorithms.' +
+            ' This work is supervised by Prof Iain Woodhouse and I am working closely with Capella Space. ' +
+            'Courses Included:',
         'bulletPoints': [
-            'INFR11130 Machine Learning and Pattern Recognition',
-            'MATH11177 Bayesian Theory',
-            'INFR11130 Image and Vision Computing',
-            'INFR11176 Fundamentals of Data Management',
-            'INFR11136 Informatics Research Review'],
+            'Machine Learning and Pattern Recognition (74%)',
+            'Bayesian Theory (89%)',
+            'Image and Vision Computing (80%)',
+            'Active remote sensing: Radar and Lidar (73%)'],
         'image': edinburgh
     },
     {

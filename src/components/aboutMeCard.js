@@ -15,18 +15,17 @@ export default function AboutMeCard() {
                 color={textColors}
             >
                 <Text textAlign={'justify'}>
-                    Hello! My name is Abie and I'm an experienced full-stack software engineer and first-class physics
-                    graduate, currently based in
-                    Edinburgh. 🏰
+                    Hello! I'm a Data Scientist experienced full-stack software engineer and first-class physics
+                    graduate, currently based in Edinburgh. 🏰
                 </Text>
                 <Text textAlign={'justify'}>
-                    After being inspired by the work of the {" "}
-                    <ExternalLink href="https://www.turing.ac.uk/" text={"Alan Turing Institute"}/>
-                    I am now starting {" "}
+                    {/*After being inspired by the work of the {" "}*/}
+                    {/*<ExternalLink href="https://www.turing.ac.uk/" text={"Alan Turing Institute"}/>*/}
+                    I'm in the process of completing my dissertation entitled: "Segmentation of Windthrow in High
+                    Resolution Capella SAR Images Using Fully Convolutional Networks" for which I am working closely with {" "}
                     <ExternalLink
-                        href="https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2021&id=902"
-                        text={"Data Science MSc"}/>
-                    at the University of Edinburgh full time between September 2021 - August 2022.
+                        href="https://www.capellaspace.com/"
+                        text={"Capella Space"}/>.
                     My ultimate ambition afterwards is to pursue a career where these skills can be utilized
                     to tackle some of our biggest environmental challenges. 🌍
                 </Text>
