@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Abie Marshall',
     description:
-        'Abie Marshall is an MSc data science student, first class physics graduate and experienced software engineer specializing in scientific instruments',
+        'Abie Marshall is a data and machine learning specialist with a passion for creating green solutions' +
+        ' and experience working in scientific and regulated environments.',
     siteUrl: 'https://abiemarshall.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
