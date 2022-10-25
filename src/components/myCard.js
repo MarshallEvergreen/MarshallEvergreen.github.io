@@ -16,11 +16,11 @@ export default function MyCard() {
             <CustomHeader>
                 <Text
                     color={headerColors}
-                    fontSize={'2xl'}>Abie Marshall BSc (Hons)</Text>
+                    fontSize={'2xl'}>Abie Marshall | MSc | BSc</Text>
             </CustomHeader>
-            <Text color={subtext}>🥇 First Class Physics Graduate</Text>
-            <Text color={subtext}>📊 MSc Data Science Student</Text>
-            <Text color={subtext}>👨🏻‍💻 Full Stack Developer</Text>
+            <Text color={subtext}>🏆 MSc Distinction - Data Science</Text>
+            <Text color={subtext}>🥇 BSc First Class - Physics</Text>
+            <Text color={subtext}>👨🏻‍💻 Awesome Development Skills</Text>
             <Stack direction={'row'} align={'center'}>
                 <LinkedInButton/>
                 <GithubButton/>

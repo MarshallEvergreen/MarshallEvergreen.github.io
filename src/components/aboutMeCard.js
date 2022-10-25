@@ -15,33 +15,39 @@ export default function AboutMeCard() {
                 color={textColors}
             >
                 <Text textAlign={'justify'}>
-                    Hello! I'm a Data Scientist experienced full-stack software engineer and first-class physics
-                    graduate, currently based in Edinburgh. 🏰
+                    Hello! I'm a Data Scientist, experienced software developer, rock and synth-wave enthusiast,
+                    tennis player and a long time suffering Ferrari F1 fan; currently based in Edinburgh.
                 </Text>
                 <Text textAlign={'justify'}>
                     {/*After being inspired by the work of the {" "}*/}
                     {/*<ExternalLink href="https://www.turing.ac.uk/" text={"Alan Turing Institute"}/>*/}
-                    I'm in the process of completing my dissertation entitled: "Segmentation of Windthrow in High
-                    Resolution Capella SAR Images Using Fully Convolutional Networks" for which I am working closely with {" "}
+                    I've recently completed an MSc in Data Science at the University of Edinburgh. For my dissertation
+                    entitled: "Segmentation of Windthrow in High Resolution Capella SAR Images Using Fully Convolutional Networks"
+                    I worked part time as a data scientist at
+                    <ExternalLink
+                        href="https://www.earthblox.io/"
+                        text={" Earth Blox"}/>
+                    and closely with {" "}
                     <ExternalLink
                         href="https://www.capellaspace.com/"
-                        text={"Capella Space"}/>.
-                    My ultimate ambition afterwards is to pursue a career where these skills can be utilized
-                    to tackle some of our biggest environmental challenges. 🌍
+                        text={" Capella Space"}/>, achieving a grade of 87%. I'm currently in the process of getting
+                    this work published.
                 </Text>
                 <Text textAlign={'justify'}>
-                    Until recently I worked for analytical instrumentation companies where I researched, designed
-                    and implemented instrument control software and data science solutions. 🔬
-                    My background allowed me to excel in interpreting both scientific and software concepts,
-                    helping to improve communication between departments.
+                    My ultimate ambition is to pursue a career where I can utilise my skills to
+                    to tackle some of our biggest environmental challenges. I'm currently pursuing this at Babcock LGE
+                    where I am developing machine learning and AI solutions for the
+                    <ExternalLink
+                        href="https://www.kongsberg.com/maritime/about-us/news-and-media/our-stories/babcocks-lge-business/"
+                        text={" ecoSMRT"}/>
+                    system to minimise CO2 emissions.
                 </Text>
                 <Text textAlign={'justify'}>
-                    I am most proud of improving the self- diagnostic abilities of the instruments
+                    Previously I worked for analytical instrumentation companies where I developed instrument control software
+                    and data science solutions. I am most proud of improving the self- diagnostic abilities of the instruments
                     and automating previously complex setup procedures which made these instruments more accessible to
-                    less
-                    technical users! 😀 The systems I have contributed towards have been recognised as part of the
-                    solution for the Pfizer –
-                    BioNTech COVID-19 vaccine! 💉
+                    less technical users! The systems I have contributed towards have been recognised as part of the
+                    solution for the Pfizer – BioNTech COVID-19 vaccine!
                 </Text>
             </Stack>
         </Center>

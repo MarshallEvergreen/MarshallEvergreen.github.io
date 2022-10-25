@@ -32,17 +32,19 @@ export default function Hero() {
                         <br/>
                         <Text as={'span'}
                               color={subtextColors}
-                              fontSize={HeaderSizes.medium}>I create software solutions for science.
+                              fontSize={HeaderSizes.medium}>I create data solutions for science.
                         </Text>
                     </CustomHeader>
                     <Text
                         maxW={{base: '100%', md: '50%'}}
                         color={textColors}>
-                        Will complete an MSc in Data Science in August 2022 which I have tailored to combine
-                        two fields I am passionate about: Earth Observation and Machine Learning. Currently working
-                        part time as an Earth Observation Data Scientist. I'm a first class physics graduate
-                        and experienced software engineer with a previous specialisation in researching, designing and
-                        implementing solutions for scientific instruments.
+                        Experienced developer with a specialisation working within scientific and regulated environments
+                        where I research, design and implement software and data science solutions. I have a first class
+                        BSc in Physics and an MSc with distinction in Data Science. My background in Physics complements
+                        my Data Science skills and allows me to excel at working within scientific domains. I aim to
+                        understand the physical systems involved and capture subject matter expertise into
+                        analytical solutions. I’m therefore knowledgeable with Liquid Gas Equipment (LGE),
+                        Synthetic Aperture Radar (SAR) and mass spectrometry.
                     </Text>
                     <Stack
                         spacing={{base: 4, sm: 6}}

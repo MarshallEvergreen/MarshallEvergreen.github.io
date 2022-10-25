@@ -33,7 +33,7 @@ export default function ExperienceSection({number, title, sectionId, injectedInf
                     colorScheme={colorScheme}>
                     <TabList>
                         {injectedInfo.map((info) => (
-                            <Tab>{info['title']}</Tab>
+                            <Tab>{info['tabName']}</Tab>
                         ))}
                     </TabList>
 
