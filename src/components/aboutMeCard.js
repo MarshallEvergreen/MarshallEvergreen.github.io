@@ -1,15 +1,15 @@
-import * as React from "react"
-import {Center, Stack, Text, useColorModeValue} from '@chakra-ui/react';
-import ExternalLink from "./externalLink";
+import { Center, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import * as React from "react";
 import MyColours from "../theme/myColors";
+import ExternalLink from "./externalLink";
 
 export default function AboutMeCard() {
     const textColors = useColorModeValue(MyColours.TextBlock[0], MyColours.TextBlock[1])
 
     return (
         <Center py={10}
-                pr={10}
-                pl={{base: '10', lg: '0'}}>
+            pr={10}
+            pl={{ base: '10', lg: '0' }}>
             <Stack
                 spacing={3}
                 color={textColors}
@@ -26,21 +26,27 @@ export default function AboutMeCard() {
                     I worked part time as a data scientist at
                     <ExternalLink
                         href="https://www.earthblox.io/"
-                        text={" Earth Blox"}/>
+                        text={" Earth Blox"} />
                     and closely with {" "}
                     <ExternalLink
                         href="https://www.capellaspace.com/"
-                        text={" Capella Space"}/>, achieving a grade of 87%. I'm currently in the process of getting
+                        text={" Capella Space"} />, achieving a grade of 87%. I'm currently in the process of getting
                     this work published.
                 </Text>
                 <Text textAlign={'justify'}>
                     My ultimate ambition is to pursue a career where I can utilise my skills to
-                    to tackle some of our biggest environmental challenges. I'm currently pursuing this at Babcock LGE
-                    where I am developing machine learning and AI solutions for the
+                    to tackle some of our biggest environmental challenges. I'm currently pursuing this at
+                    <ExternalLink
+                        href="https://www.sylvera.com/"
+                        text={" Sylvera"} />
+                    where I combine deep learning and satellite data to bring transparency to the carbon
+                    markets.
+
+                    Before that I worked on the
                     <ExternalLink
                         href="https://www.kongsberg.com/maritime/about-us/news-and-media/our-stories/babcocks-lge-business/"
-                        text={" ecoSMRT"}/>
-                    system to minimise CO2 emissions.
+                        text={" ecoSMRT"} />
+                    system to minimise CO2 emissions and help the shipping industry meet it's net zero commitments.
                 </Text>
                 <Text textAlign={'justify'}>
                     Previously I worked for analytical instrumentation companies where I developed instrument control software

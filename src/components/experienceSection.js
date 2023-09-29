@@ -1,4 +1,3 @@
-import * as React from "react"
 import {
     Center,
     Stack,
@@ -10,13 +9,14 @@ import {
     useBreakpointValue,
     useColorModeValue
 } from '@chakra-ui/react';
-import SectionHeader from "./sectionHeader";
-import ExperienceCard from "./experienceCard";
+import * as React from "react";
 import MyColours from "../theme/myColors";
+import ExperienceCard from "./experienceCard";
+import SectionHeader from "./sectionHeader";
 
-export default function ExperienceSection({number, title, sectionId, injectedInfo}) {
+export default function ExperienceSection({ number, title, sectionId, injectedInfo }) {
     const colorScheme = useColorModeValue(MyColours.colorScheme[0], MyColours.colorScheme[1])
-    const orientation = useBreakpointValue({base: 'horizontal', md: 'vertical'})
+    const orientation = useBreakpointValue({ base: 'horizontal', md: 'vertical' })
 
     return (
         <Center
@@ -24,31 +24,33 @@ export default function ExperienceSection({number, title, sectionId, injectedInf
             id={sectionId}
         >
             <Stack
-                minW={{base: '0', md: '800px'}}
+                minW={{ base: '0', md: '800px' }}
                 minH={'750px'}
             >
-                <SectionHeader number={number} title={title}/>
+                <SectionHeader number={number} title={title} />
                 <Tabs
                     orientation={orientation}
                     colorScheme={colorScheme}>
-                    <TabList>
-                        {injectedInfo.map((info) => (
-                            <Tab>{info['tabName']}</Tab>
-                        ))}
-                    </TabList>
+                    <div style={{ overflowX: 'auto' }}>
+                        <TabList>
+                            {injectedInfo.map((info) => (
+                                <Tab>{info['tabName']}</Tab>
+                            ))}
+                        </TabList>
+                    </div>
 
                     <TabPanels>
                         {injectedInfo.map((info) => (
                             <TabPanel>
                                 <Center
                                     py={6}>
-                                    <ExperienceCard info={info}/>
+                                    <ExperienceCard info={info} />
                                 </Center>
                             </TabPanel>
                         ))}
                     </TabPanels>
                 </Tabs>
             </Stack>
-        </Center>
+        </Center >
     );
 }

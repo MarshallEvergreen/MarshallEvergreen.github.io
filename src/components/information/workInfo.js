@@ -1,19 +1,40 @@
+import babcock_image from '../../images/babcock_2.svg';
+import earth_blox_image from '../../images/earth_blox.png';
 import kratos_image from '../../images/shimadzu.png';
+import sylvera_image from '../../images/sylvera.svg';
 import waters_image from '../../images/waters.png';
-import earth_blox_image from '../../images/earth_blox.png'
-import babcock_image from '../../images/babcock_2.svg'
 
 const WorkInfo = [
     {
         'experience': [
             {
+                'title': 'Machine Learning Engineer',
+                'dates': 'April 2023 - present',
+                'summary': 'Machine learning engineer focussed on combining deep learning and remote sensing to bring transparency to the carbon market' +
+                    'and incentivize real investment in climate action.',
+                'bulletPoints': [
+                    'Casually doing my best to save the planet 🌳',
+                    'Researching and developing novel deep learning algorithms to be applied to satellite data',
+                    'Engineering ML pipelines according to software engineering best standard to ensure they are robust, scalable and extensible.',
+                    'Liaising with stakeholders to ensure our ML solutions are actually brining value to customers'
+                ]
+            }
+        ],
+        'link': 'https://www.babcockinternational.com/what-we-do/marine/energy-and-marine/babcocklge/',
+        'tabName': 'Sylvera',
+        'company': 'Sylvera',
+        'image': sylvera_image
+    },
+    {
+        'experience': [
+            {
                 'title': 'Data Scientist & Engineer',
-                'dates': 'October 2022 - present',
+                'dates': 'October 2022 - March 2023',
                 'summary': 'Leading the development of data processing pipelines and methodologies to analyse real time data streamed remotely from ' +
                     'Liquid Gas Equipment (LGE) instrumentation.',
                 'bulletPoints': [
                     'Leading the deployment of the infrastructure and practices required to productionise data science solutions ' +
-                    'into commercial products. This is a new endeavor for Babcock and I am liaising with business wide ' +
+                    'into commercial products. This is a new endeavour for Babcock and I am liaising with business wide ' +
                     'stakeholders to ensure solutions work across the business and remain robust',
                     'Developing machine learning and artificial intelligence solutions to ' +
                     'minimise operational downtime and ensure equipment is running efficiently as possible; aiding the shipping industry in ' +
