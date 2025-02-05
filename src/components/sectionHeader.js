@@ -1,11 +1,11 @@
-import * as React from "react"
-import {Box, HStack, Text, useColorModeValue} from "@chakra-ui/react";
+import { Box, HStack, Text, useColorModeValue } from "@chakra-ui/react";
+import * as React from "react";
+import HeaderSizes from "../theme/headerSizes";
 import MyColours from "../theme/myColors";
 import CustomHeader from "./heading";
-import HeaderSizes from "../theme/headerSizes";
 
 
-export default function SectionHeader({number, title}) {
+export default function SectionHeader({ number, title }) {
     const navText = useColorModeValue(MyColours.NavigationText[0], MyColours.NavigationText[1])
     const navNumbers = useColorModeValue(MyColours.NavigationNumber[0], MyColours.NavigationNumber[1])
 
@@ -36,7 +36,7 @@ export default function SectionHeader({number, title}) {
                     {title}
                 </Text>
             </CustomHeader>
-            <Line/>
+            <Line />
         </HStack>
     )
 }

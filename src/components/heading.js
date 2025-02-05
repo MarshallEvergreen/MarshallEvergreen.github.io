@@ -1,7 +1,7 @@
+import { Heading } from "@chakra-ui/react";
 import React from 'react';
-import {Heading} from "@chakra-ui/react";
 
-export default function CustomHeader({children}) {
+export default function CustomHeader({ children }) {
     return (
         <Heading
             transition={'0.3s'}

@@ -1,11 +1,11 @@
-import * as React from "react"
+import { Stack, Text, useColorModeValue, } from '@chakra-ui/react';
+import * as React from "react";
 import me from '../images/me.jpg';
-import {Stack, Text, useColorModeValue,} from '@chakra-ui/react';
-import LinkedInButton from "./linkedInButton";
-import GithubButton from "./githubButton";
-import PersonalCard from "./personalCard";
 import MyColours from "../theme/myColors";
+import GithubButton from "./githubButton";
 import CustomHeader from "./heading";
+import LinkedInButton from "./linkedInButton";
+import PersonalCard from "./personalCard";
 
 export default function MyCard() {
     const subtext = useColorModeValue(MyColours.SubTextBlock[0], MyColours.SubTextBlock[1])
@@ -22,8 +22,8 @@ export default function MyCard() {
             <Text color={subtext}>🥇 BSc First Class - Physics</Text>
             <Text color={subtext}>👨🏻‍💻 Awesome Development Skills</Text>
             <Stack direction={'row'} align={'center'}>
-                <LinkedInButton/>
-                <GithubButton/>
+                <LinkedInButton />
+                <GithubButton />
             </Stack>
         </PersonalCard>
     );

@@ -1,8 +1,8 @@
-import * as React from "react"
-import {Box, Center, Image, Stack, useColorModeValue,} from '@chakra-ui/react';
+import { Box, Center, Image, Stack, useColorModeValue, } from '@chakra-ui/react';
+import * as React from "react";
 import MyColours from "../theme/myColors";
 
-export default function PersonalCard({children, image}) {
+export default function PersonalCard({ children, image }) {
     const cardBackground = useColorModeValue(MyColours.CardBackground[0], MyColours.CardBackground[1])
     return (
         <Center py={12}>

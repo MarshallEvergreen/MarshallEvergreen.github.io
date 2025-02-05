@@ -1,5 +1,5 @@
-import manchester from '../../images/manchester.png';
 import edinburgh from '../../images/edinburgh.png';
+import manchester from '../../images/manchester.png';
 
 const EducationInfo = [
     {

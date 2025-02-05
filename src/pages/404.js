@@ -1,5 +1,5 @@
+import { Link } from "gatsby"
 import * as React from "react"
-import {Link} from "gatsby"
 
 // styles
 const pageStyles = {
@@ -26,8 +26,8 @@ const NotFoundPage = () => {
             <p style={paragraphStyles}>
                 Sorry{" "}
                 <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
+                    😔
+                </span>{" "}
                 we couldn’t find what you were looking for.
                 <Link to="/">Go home</Link>.
             </p>

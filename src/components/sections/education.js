@@ -1,6 +1,6 @@
-import * as React from "react"
-import EducationInfo from "../information/educationInfo";
+import * as React from "react";
 import ExperienceSection from "../experienceSection";
+import EducationInfo from "../information/educationInfo";
 
 export default function Education() {
     return (
@@ -8,6 +8,6 @@ export default function Education() {
             number={'02.'}
             title={"What I've studied"}
             sectionId={'Education'}
-            injectedInfo={EducationInfo}/>
+            injectedInfo={EducationInfo} />
     )
 }

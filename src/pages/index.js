@@ -1,17 +1,17 @@
-import * as React from "react"
+import * as React from "react";
 import Layout from "../components/layout";
-import Work from "../components/sections/work";
+import AboutMe from "../components/sections/aboutMe";
 import Education from "../components/sections/education";
 import Hero from "../components/sections/hero";
-import AboutMe from "../components/sections/aboutMe";
+import Work from "../components/sections/work";
 
 const Index = () => {
     return (
         <Layout>
-            <Hero/>
-            <AboutMe/>
-            <Education/>
-            <Work/>
+            <Hero />
+            <AboutMe />
+            <Education />
+            <Work />
         </Layout>
     )
 }
