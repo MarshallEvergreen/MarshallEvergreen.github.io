@@ -2,7 +2,7 @@ import {
     Box, Flex, HStack, Image, Link, List, ListIcon, ListItem, Stack, Text, useColorModeValue,
 } from '@chakra-ui/react';
 import * as React from "react";
-import { MdCheckCircle } from "react-icons/all";
+import { MdCheckCircle } from "react-icons/md";
 import HeaderSizes from "../theme/headerSizes";
 import MyColours from "../theme/myColors";
 import CustomHeader from "./heading";
