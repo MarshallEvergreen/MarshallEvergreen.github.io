@@ -20,7 +20,7 @@ const WorkInfo = [
                 ]
             }
         ],
-        'link': 'https://www.babcockinternational.com/what-we-do/marine/energy-and-marine/babcocklge/',
+        'link': 'https://www.sylvera.com/',
         'tabName': 'Sylvera',
         'company': 'Sylvera',
         'image': sylvera_image
