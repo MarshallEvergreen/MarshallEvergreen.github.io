@@ -8,7 +8,7 @@ const WorkInfo = [
     {
         'experience': [
             {
-                'title': 'Machine Learning Engineer',
+                'title': 'Senior Engineer',
                 'dates': 'April 2023 - present',
                 'summary': 'Machine learning engineer focussed on combining deep learning and remote sensing to bring transparency to the carbon market' +
                     'and incentivize real investment in climate action.',
