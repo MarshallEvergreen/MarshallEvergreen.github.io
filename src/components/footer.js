@@ -22,7 +22,7 @@ export default function Footer() {
                 justify={{ md: 'space-between' }}
                 align={{ md: 'center' }}>
                 <Stack>
-                    <Text>© 2021 Abie Marshall. Built by me! Using {" "}
+                    <Text>© 2025 Abie Marshall. Built by me! Using {" "}
                         <ExternalLink href="https://www.gatsbyjs.com/" text={"Gatsby"} />
                         {" + "}
                         <ExternalLink href="https://reactjs.org/" text={"React"} />
