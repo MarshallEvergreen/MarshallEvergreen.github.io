@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 import SocialButton from "./socialButton";
 
 export default function GithubButton() {
