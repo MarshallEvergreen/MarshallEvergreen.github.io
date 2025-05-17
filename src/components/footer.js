@@ -3,6 +3,7 @@ import * as React from "react";
 import MyColours from "../theme/myColors";
 import ExternalLink from "./externalLink";
 import GithubButton from "./githubButton";
+import GoogleScholarButton from './googleScholarButton';
 import LinkedInButton from "./linkedInButton";
 
 export default function Footer() {
@@ -42,6 +43,7 @@ export default function Footer() {
                     justify={{ base: 'center', md: 'flex-end' }}>
                     <LinkedInButton />
                     <GithubButton />
+                    <GoogleScholarButton />
                 </HStack>
             </Stack>
         </Box>

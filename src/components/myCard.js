@@ -3,6 +3,7 @@ import * as React from "react";
 import me from '../images/me.jpg';
 import MyColours from "../theme/myColors";
 import GithubButton from "./githubButton";
+import GoogleScholarButton from './googleScholarButton';
 import CustomHeader from "./heading";
 import LinkedInButton from "./linkedInButton";
 import PersonalCard from "./personalCard";
@@ -24,6 +25,7 @@ export default function MyCard() {
             <Stack direction={'row'} align={'center'}>
                 <LinkedInButton />
                 <GithubButton />
+                <GoogleScholarButton />
             </Stack>
         </PersonalCard>
     );
