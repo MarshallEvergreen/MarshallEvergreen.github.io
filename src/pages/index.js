@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import AboutMe from "../components/sections/aboutMe";
 import Education from "../components/sections/education";
 import Hero from "../components/sections/hero";
+import Projects from "../components/sections/projects";
 import Work from "../components/sections/work";
 
 const Index = () => {
@@ -12,6 +13,7 @@ const Index = () => {
             <AboutMe />
             <Work />
             <Education />
+            <Projects />
         </Layout>
     )
 }

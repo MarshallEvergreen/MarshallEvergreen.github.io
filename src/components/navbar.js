@@ -31,6 +31,10 @@ const Links = [
         'label': ['03.', 'Education'],
         'link': 'Education'
     },
+    {
+        'label': ['04.', 'Projects'],
+        'link': 'Projects'
+    },
 ]
 
 const scroll = Scroll.animateScroll;
