@@ -5,7 +5,7 @@ import EducationInfo from "../information/educationInfo";
 export default function Education() {
     return (
         <ExperienceSection
-            number={'02.'}
+            number={'03.'}
             title={"What I've studied"}
             sectionId={'Education'}
             injectedInfo={EducationInfo} />

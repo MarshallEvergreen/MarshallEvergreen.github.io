@@ -24,13 +24,13 @@ const Links = [
         'link': 'About'
     },
     {
-        'label': ['02.', 'Education'],
-        'link': 'Education'
+        'label': ['02.', 'Work'],
+        'link': 'Work'
     },
     {
-        'label': ['03.', 'Work'],
-        'link': 'Work'
-    }
+        'label': ['03.', 'Education'],
+        'link': 'Education'
+    },
 ]
 
 const scroll = Scroll.animateScroll;
