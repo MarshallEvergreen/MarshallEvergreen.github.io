@@ -10,13 +10,18 @@ const WorkInfo = [
             {
                 'title': 'Senior Engineer',
                 'dates': 'April 2023 - present',
-                'summary': 'Machine learning engineer focussed on combining deep learning and remote sensing to bring transparency to the carbon market' +
-                    'and incentivize real investment in climate action.',
+                'summary': 'Senior engineer within the Earth Analytics team, mentoring a team of engineers ' +
+                    'to scale Sylvera’s geospatial products and unlock new revenue streams, with a target ' +
+                    'contribution of one- third of the company’s annual recurring revenue.',
                 'bulletPoints': [
-                    'Casually doing my best to save the planet 🌳',
-                    'Researching and developing novel deep learning algorithms to be applied to satellite data',
-                    'Engineering ML pipelines according to software engineering best standard to ensure they are robust, scalable and extensible.',
-                    'Liaising with stakeholders to ensure our ML solutions are actually brining value to customers'
+                    'I lead the design of a new external service, collaborating across teams and engaging with customers to deliver proprietary data to the market for the first time.',
+                    'I modernised engineering standards, mentored colleagues and consolidated a fragmented codebase into a platform - ' +
+                    'providing a launchpad to scale the business to the next level.',
+                    'I led a team to productionise and automate 25 manual ' +
+                    'geospatial products. This reduced data delivery times from over a week to an average' +
+                    'of 30 minutes and increased the volume of delivery from around 5 projects a week to' +
+                    'in order of hundreds. This covered 95% of the data powering the main product',
+                    'Contributed to novel ML techniques applied to satellite data for above ground biomass mapping that have been published in scientific journals.'
                 ]
             }
         ],
