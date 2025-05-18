@@ -85,9 +85,10 @@ const WorkInfo = [
                 'summary': 'Responsible for feasibility studies and driving the adoption of new technologies/practices. ' +
                     'Tech included C++, C#, Azure, Specflow, Gherkin, Appium.',
                 'bulletPoints': [
-                    'Drove the adoption of modern practices and held workshops, demonstrations and presentations',
                     'Developed a test framework with the capability to automate at least 50% of the existing manual testing',
-                    'Incorporated Azure into the existing infrastructure to improve CI/CD'
+                    'Incorporated Azure into the existing infrastructure to improve CI/CD',
+                    'Migrated the existing C++ codebase to C++17 and incorporated modern C++ practices into the codebase such ' +
+                    'as smart pointers, lambdas and auto type inference and STL containers to improve code readability and maintainability',
                 ]
             }
         ],
@@ -103,12 +104,12 @@ const WorkInfo = [
                 'title': 'Software Engineer',
                 'dates': 'Nov 2017 - Dec 2020',
                 'summary': 'Responsible for the design and implementation of Mass Spectrometer control software. Working within a ' +
-                    'microservice architecture with C++, C#, Python, Lua, Docker, Angular2+ and more!',
+                    'microservice architecture with C++, C#, embedded Lua, Docker, Angular2+',
                 'bulletPoints': [
-                    'Created deep simulations of real time data and instrument behaviour',
-                    'Developed self-diagnosing and automated instrument setup procedures',
-                    'Pioneered the use of python for developing new data analysis techniques',
-                    'Investigated how machine learning could be utilised for predictive maintenance',
+                    'Created deep simulations of real time data and instrument behaviour to aid in the development of new control software.',
+                    'Incorporated rust into the existing gRPC C++ microservice architecture to improve robustness and reduce bugs.',
+                    'Led the development a new realtime "Health" service to monitor the health of the mass spectrometer and alert users to potential issues.',
+                    'Automated complicated, previously manual, instrument setup procedures to make the instruments more accessible to less technical users.',
                 ]
             },
             {
