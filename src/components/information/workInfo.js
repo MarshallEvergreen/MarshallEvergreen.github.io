@@ -12,7 +12,8 @@ const WorkInfo = [
                 'dates': 'April 2023 - present',
                 'summary': 'Senior engineer within the Earth Analytics team, mentoring a team of engineers ' +
                     'to scale Sylvera’s geospatial products and unlock new revenue streams, with a target ' +
-                    'contribution of one- third of the company’s annual recurring revenue.',
+                    'contribution of one- third of the company’s annual recurring revenue. Tech includes Python, ' +
+                    'C++, Typescript, AWS, Docker, Terraform.',
                 'bulletPoints': [
                     'I lead the design of a new external service, collaborating across teams and engaging with customers to deliver proprietary data to the market for the first time.',
                     'I modernised engineering standards, mentored colleagues and consolidated a fragmented codebase into a platform - ' +
@@ -20,7 +21,7 @@ const WorkInfo = [
                     'I led a team to productionise and automate 25 manual ' +
                     'geospatial products. This reduced data delivery times from over a week to an average' +
                     'of 30 minutes and increased the volume of delivery from around 5 projects a week to' +
-                    'in order of hundreds. This covered 95% of the data powering the main product',
+                    'in order of hundreds.',
                     'Contributed to novel ML techniques applied to satellite data for above ground biomass mapping that have been published in scientific journals.'
                 ]
             }
@@ -36,7 +37,7 @@ const WorkInfo = [
                 'title': 'Data Scientist & Engineer',
                 'dates': 'October 2022 - March 2023',
                 'summary': 'Leading the development of data processing pipelines and methodologies to analyse real time data streamed remotely from ' +
-                    'Liquid Gas Equipment (LGE) instrumentation.',
+                    'Liquid Gas Equipment (LGE) instrumentation. Tech included C#, Python, Typescript, AWS and Docker.',
                 'bulletPoints': [
                     'Leading the deployment of the infrastructure and practices required to productionise remotely monitored instrumentation data ' +
                     'into commercial products. This is a new endeavour for Babcock and I liaised with business wide ' +
@@ -62,7 +63,8 @@ const WorkInfo = [
                 'dates': 'March 2022 - August 2022',
                 'summary': 'Data scientist at a fast paced startup aiming to make earth observation accessible to everyone, ' +
                     'regardless of expertise. I support the development of new earth observation workflows ' +
-                    'by developing data science pipelines and prototyping new algorithms.',
+                    'by developing data science pipelines and prototyping new algorithms. Tech included Python, ' +
+                    'Typescript, Google Cloud, Earth Engine.',
                 'bulletPoints': [
                     'Led the design and implementation an automated testing framework for the earth blox application. ',
                     'Collated historical windthrow events from the Copernicus Emergency Management Service to facilitate ' +
@@ -81,7 +83,7 @@ const WorkInfo = [
                 'title': 'Software Engineer',
                 'dates': 'Dec 2020 - Aug 2021',
                 'summary': 'Responsible for feasibility studies and driving the adoption of new technologies/practices. ' +
-                    'Worked with C#, Azure, Python, Specflow, Gherkin, Appium and more!',
+                    'Tech included C++, C#, Azure, Specflow, Gherkin, Appium.',
                 'bulletPoints': [
                     'Drove the adoption of modern practices and held workshops, demonstrations and presentations',
                     'Developed a test framework with the capability to automate at least 50% of the existing manual testing',
