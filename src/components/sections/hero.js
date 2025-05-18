@@ -42,9 +42,9 @@ export default function Hero() {
                         Physics, MSc in Data Science). I’ve had the privilege to work across the tech spectrum and led impactful
                         Software/Data/ML projects across several scientific industries - from mass spectrometry to earth observation.
                         I bring a blend of skills that allow me to excel at researching solutions whilst also able to
-                        productionise and deploy these in a robust and scalable manner. I enjoy working with strongly typed languages
-                        with extensive experience in modern C++ and Rust, and more recently, Python with mypy and ruff set to hard mode.
-                        TypeScript isn't too bad either! I’m passionate about writing clean, maintainable code with a focus on
+                        productionise and deploy these. I enjoy working with strongly typed languages with extensive experience
+                        in modern C++ and Rust, and more recently, Python with mypy and ruff set to hard mode.
+                        TypeScript isn't too bad either! I’m passionate about writing maintainable code with a focus on
                         solid architecture and best practices like TDD.
                     </Text>
                     <Stack

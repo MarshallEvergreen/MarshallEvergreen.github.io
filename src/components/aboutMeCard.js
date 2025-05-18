@@ -1,7 +1,6 @@
 import { Center, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 import * as React from "react";
 import MyColours from "../theme/myColors";
-import ExternalLink from "./externalLink";
 
 export default function AboutMeCard() {
     const textColors = useColorModeValue(MyColours.TextBlock[0], MyColours.TextBlock[1])
@@ -15,25 +14,24 @@ export default function AboutMeCard() {
                 color={textColors}
             >
                 <Text textAlign={'justify'}>
-                    Hello! I'm a Data Scientist, experienced software developer, rock and synth-wave enthusiast,
-                    tennis player and a long time suffering Ferrari F1 fan; currently based in Edinburgh.
+                    Hey! I'm an experienced engineer who enjoys getting stuck into all aspects of the software delivery lifecycle -
+                    from requirements gathering, architecture and implementation to testing and deployment. I’m also comfortable putting
+                    on my math hat to dive into data science and machine learning, which gives me a unique ability to bridge the
+                    gap between research and production.
                 </Text>
                 <Text textAlign={'justify'}>
-                    {/*After being inspired by the work of the {" "}*/}
-                    {/*<ExternalLink href="https://www.turing.ac.uk/" text={"Alan Turing Institute"}/>*/}
-                    I've recently completed an MSc in Data Science at the University of Edinburgh. For my dissertation
-                    entitled: "Segmentation of Windthrow in High Resolution Capella SAR Images Using Fully Convolutional Networks"
-                    I worked part time as a data scientist at
-                    <ExternalLink
-                        href="https://www.earthblox.io/"
-                        text={" Earth Blox"} />
-                    and closely with {" "}
-                    <ExternalLink
-                        href="https://www.capellaspace.com/"
-                        text={" Capella Space"} />, achieving a grade of 87%. I'm currently in the process of getting
-                    this work published.
+                    I've enjoy applying my skills to solve all kinds of real-world scientific problems, notably the systems that I
+                    contributed towards were recognised as part of the solution for the Pfizer – BioNTech COVID-19 vaccine. However,
+                    I have a particular passion for geospatial and earth observation data. I have contributed to several
+                    publications in this area mostly focussed on apply novel machine learning techniques to satellite data
+                    and using this to map above ground biomass.
                 </Text>
                 <Text textAlign={'justify'}>
+                    When I'm inside but not at my computer you'd probably find me renovating my Edinburgh tenement,
+                    putting together some metal and synth-wave playlists, gaming or occasionally painting.
+                    When I'm outside, I enjoy hiking, cycling and heading to the gym.
+                </Text>
+                {/* <Text textAlign={'justify'}>
                     My ultimate ambition is to pursue a career where I can utilise my skills to
                     to tackle some of our biggest environmental challenges. I'm currently pursuing this at
                     <ExternalLink
@@ -47,14 +45,14 @@ export default function AboutMeCard() {
                         href="https://www.kongsberg.com/maritime/about-us/news-and-media/our-stories/babcocks-lge-business/"
                         text={" ecoSMRT"} />
                     system to minimise CO2 emissions and help the shipping industry meet it's net zero commitments.
-                </Text>
-                <Text textAlign={'justify'}>
+                </Text> */}
+                {/* <Text textAlign={'justify'}>
                     Previously I worked for analytical instrumentation companies where I developed instrument control software
                     and data science solutions. I am most proud of improving the self- diagnostic abilities of the instruments
                     and automating previously complex setup procedures which made these instruments more accessible to
                     less technical users! The systems I have contributed towards have been recognised as part of the
                     solution for the Pfizer – BioNTech COVID-19 vaccine!
-                </Text>
+                </Text> */}
             </Stack>
         </Center>
     );
