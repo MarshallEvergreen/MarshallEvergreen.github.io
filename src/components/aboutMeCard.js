@@ -23,7 +23,7 @@ export default function AboutMeCard() {
                     I've enjoyed applying my skills to solve all kinds of real-world scientific problems, notably the systems that I
                     contributed towards were recognised as part of the solution for the Pfizer – BioNTech COVID-19 vaccine. However,
                     I have a particular passion for geospatial and earth observation data. I have contributed to several
-                    publications in this area mostly focussed on apply novel machine learning techniques to satellite data
+                    publications in this area mostly focussed on applying novel machine learning techniques to satellite data
                     and using this to map above ground biomass.
                 </Text>
                 <Text textAlign={'justify'}>
