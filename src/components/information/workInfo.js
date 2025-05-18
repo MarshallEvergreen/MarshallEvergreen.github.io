@@ -38,14 +38,15 @@ const WorkInfo = [
                 'summary': 'Leading the development of data processing pipelines and methodologies to analyse real time data streamed remotely from ' +
                     'Liquid Gas Equipment (LGE) instrumentation.',
                 'bulletPoints': [
-                    'Leading the deployment of the infrastructure and practices required to productionise data science solutions ' +
-                    'into commercial products. This is a new endeavour for Babcock and I am liaising with business wide ' +
+                    'Leading the deployment of the infrastructure and practices required to productionise remotely monitored instrumentation data ' +
+                    'into commercial products. This is a new endeavour for Babcock and I liaised with business wide ' +
                     'stakeholders to ensure solutions work across the business and remain robust',
                     'Developing machine learning and artificial intelligence solutions to ' +
                     'minimise operational downtime and ensure equipment is running efficiently as possible; aiding the shipping industry in ' +
                     'meeting its net zero commitments',
                     'Developing digital twins of instrumentation to aid process (chemical) engineers understand how systems ' +
-                    'are operating in the field'
+                    'are operating in the field',
+                    'Wrote the job descriptions, interviewed and grew the team from myself whilst also incorporating with the wider business graduate scheme'
                 ]
             }
         ],
@@ -63,11 +64,9 @@ const WorkInfo = [
                     'regardless of expertise. I support the development of new earth observation workflows ' +
                     'by developing data science pipelines and prototyping new algorithms.',
                 'bulletPoints': [
+                    'Led the design and implementation an automated testing framework for the earth blox application. ',
                     'Collated historical windthrow events from the Copernicus Emergency Management Service to facilitate ' +
                     'development of new windthrow algorithms in Sentinel-1 data.',
-                    'Developed automated workflows to scrape, encode and create training data from available earth engine ' +
-                    'functions and image collections IDs. Developed algorithms to recommend useful earth engine collections ' +
-                    'to users based on previous workflow usages.'
                 ]
             }
         ],
