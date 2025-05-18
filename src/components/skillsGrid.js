@@ -89,14 +89,14 @@ export default function SkillsGrid() {
             <SkillGrid
                 heading={'And I\'ve then deployed and orchestrated them with...'}>
                 <SkillIcon icon={'amazonwebservices-plain-wordmark'} link={'https://aws.amazon.com/'} />
+                <SkillIcon icon={'terraform-plain'} link={'https://www.hashicorp.com/'} />
                 <SkillIcon icon={'docker-plain-wordmark'} link={'https://www.docker.com/'} />
                 <SkillIcon icon={'kubernetes-plain'} link={'https://kubernetes.io/'} />
                 <SkillIcon icon={'bamboo-original'} link={'https://www.atlassian.com/software/bamboo'} />
                 <SkillIcon icon={'circleci-plain'} link={'https://circleci.com/'} />
                 <SkillIcon icon={'githubactions-plain'} link={'https://github.com/features/actions'} />
                 <SkillIcon icon={'apacheairflow-plain'} link={'https://airflow.apache.org/'} />
-                <SkillIcon icon={'swagger-plain'} link={'https://swagger.io/'} />
-                <SkillIcon icon={'pypi-plain'} link={'https://github.com/features/actions'} />
+                <SkillIcon icon={'pypi-plain'} link={'https://pypi.org/'} />
             </SkillGrid>
         </Accordion>
     )
