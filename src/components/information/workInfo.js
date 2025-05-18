@@ -61,7 +61,7 @@ const WorkInfo = [
             {
                 'title': 'Data Scientist',
                 'dates': 'March 2022 - August 2022',
-                'summary': 'Data scientist at a fast paced startup aiming to make earth observation accessible to everyone, ' +
+                'summary': '(Part time whilst doing Masters) Data scientist at a fast paced startup aiming to make earth observation accessible to everyone, ' +
                     'regardless of expertise. I support the development of new earth observation workflows ' +
                     'by developing data science pipelines and prototyping new algorithms. Tech included Python, ' +
                     'Typescript, Google Cloud, Earth Engine.',
