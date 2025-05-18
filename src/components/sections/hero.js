@@ -22,7 +22,7 @@ export default function Hero() {
                         <Text
                             color={headerColors}
                             fontSize={HeaderSizes.small}
-                            as={'span'}>Hi, my name is
+                            as={'span'}>Hi, I'm
                         </Text>
                         <br />
                         <Text as={'span'}
@@ -32,19 +32,20 @@ export default function Hero() {
                         <br />
                         <Text as={'span'}
                             color={subtextColors}
-                            fontSize={HeaderSizes.medium}>I create data solutions for science.
+                            fontSize={HeaderSizes.medium}>Turning Complex Data into Scalable Solutions.
                         </Text>
                     </CustomHeader>
                     <Text
                         maxW={{ base: '100%', md: '50%' }}
                         color={textColors}>
-                        Experienced developer with a specialisation working within scientific and regulated environments
-                        where I research, design and implement software and data science solutions. I have a first class
-                        BSc in Physics and an MSc with distinction in Data Science. My background in Physics complements
-                        my Data Science skills and allows me to excel at working within scientific domains. I aim to
-                        understand the physical systems involved and capture subject matter expertise into
-                        analytical solutions. I’m therefore knowledgeable with, Synthetic Aperture Radar (SAR) Liquid Gas Equipment (LGE),
-                        and mass spectrometry.
+                        Experienced Software/Data/ML Engineer with a strong foundation in data science (BSc in
+                        Physics, MSc in Data Science). I’ve had the privilege to work across the tech spectrum and led impactful
+                        Software/Data/ML projects across several scientific industries - from mass spectrometry to earth observation.
+                        I bring a blend of skills that allow me to excel at researching solutions whilst also able to
+                        productionise and deploy these in a robust and scalable manner. I enjoy working with strongly typed languages
+                        with extensive experience in modern C++ and Rust, and more recently, Python with mypy and ruff set to hard mode.
+                        TypeScript isn't too bad either! I’m passionate about writing clean, maintainable code with a focus on
+                        solid architecture and best practices like TDD.
                     </Text>
                     <Stack
                         spacing={{ base: 4, sm: 6 }}
