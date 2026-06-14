@@ -1,17 +1,17 @@
 const MyColours = {
-    'PageBackground': ['purple.50', 'gray.800'],
-    'CardBackground': ["white", "cyan.800"],
+    'PageBackground': ['purple.50', 'gray.900'],
+    'CardBackground': ["white", "gray.700"],
 
     'NavFooter': ["white", "gray.800"],
 
-    'Header': ["purple.700", "green.100"],
-    'TextBlock': ["gray.600", "blue.200"],
-    'SubTextBlock': ["gray.500", "blue.100"],
+    'Header': ["purple.700", "teal.200"],
+    'TextBlock': ["gray.600", "gray.100"],
+    'SubTextBlock': ["gray.500", "gray.400"],
 
-    'NavigationNumber': ["purple.600", "green.300"],
-    'NavigationText': ["gray.400", "blue.200"],
-    'NavigationTextHover': ["purple.600", "green.300"],
+    'NavigationNumber': ["purple.600", "teal.300"],
+    'NavigationText': ["gray.400", "gray.300"],
+    'NavigationTextHover': ["purple.600", "teal.300"],
 
-    'colorScheme': ["purple", "green"]
+    'colorScheme': ["purple", "teal"]
 }
 export default MyColours
