@@ -1,6 +1,7 @@
 import babcock_image from '../../images/babcock_2.svg';
 import earth_blox_image from '../../images/earth_blox.png';
 import kratos_image from '../../images/shimadzu.png';
+import leonardo_image from '../../images/Logo_Leonardo.svg';
 import sylvera_image from '../../images/sylvera.svg';
 import waters_image from '../../images/waters.png';
 
@@ -8,8 +9,29 @@ const WorkInfo = [
     {
         'experience': [
             {
+                'title': 'Principal Software Engineer',
+                'dates': 'October 2025 - present',
+                'summary': 'Lead engineer for Leonardo\'s Data & Analytics team, transforming a fragmented engineering function ' +
+                    'into a product-driven team delivering data capabilities to customers. Tech includes Python, REST microservices, Docker, CI/CD.',
+                'bulletPoints': [
+                    'Led the design and delivery of an asynchronous REST microservice data platform with distributed pipelines ' +
+                    'capable of cataloguing and replaying petabytes of historical geolocated data, accelerating algorithm development by orders of magnitude.',
+                    'Established version control discipline, containerisation standards, and a CI/CD pipeline — compressing feature delivery from months to days.',
+                    'Founded an engineering guild and upskilled colleagues through pair programming to embed architectural principles and testing practices across the organisation.',
+                    'Line manage several engineers and mentor industrial placement students through tailored development plans and technical coaching.',
+                ]
+            }
+        ],
+        'link': 'https://www.leonardocompany.com/',
+        'tabName': 'Leonardo',
+        'company': 'Leonardo',
+        'image': leonardo_image
+    },
+    {
+        'experience': [
+            {
                 'title': 'Senior Engineer',
-                'dates': 'April 2023 - present',
+                'dates': 'April 2023 - October 2025',
                 'summary': 'Senior engineer within the Earth Analytics team, mentoring a team of engineers ' +
                     'to scale Sylvera’s geospatial products and unlock new revenue streams, with a target ' +
                     'contribution of one- third of the company’s annual recurring revenue. Tech includes Python, ' +

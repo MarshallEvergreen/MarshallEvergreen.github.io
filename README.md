@@ -1,54 +1,36 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# MarshallEvergreen.github.io
 
-## 🚀 Quick start
+Personal website built with Gatsby, React, and Chakra UI. Deployed to GitHub Pages.
 
-1.  **Create a Gatsby site.**
+## Stack
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+- **Gatsby 5** — static site generation
+- **React 18**
+- **Chakra UI v2**
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Development
 
-2.  **Start developing.**
+```shell
+npm run develop   # start dev server at http://localhost:1994
+npm run build     # production build
+npm run deploy    # build and deploy to GitHub Pages (master branch)
+```
 
-    Navigate into your new site’s directory and start it up.
+## Future stack considerations
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+The current stack was set up in 2021. Some notes for if/when a refresh makes sense:
 
-3.  **Open the code and start customizing!**
+### Gatsby
+Has lost significant mindshare since 2021. Netlify acquired it and development has slowed. For a single-page static site with no dynamic data, it's overkill. Alternatives worth considering:
+- **Astro** — ships zero JS by default, great for static content, supports React components, much simpler build pipeline
+- **Next.js** — more active ecosystem if staying in the React/SSG world
+- **Vite + React** — if SSG isn't needed (fine for a personal site)
 
-    Your site is now running at http://localhost:8000!
+### Chakra UI
+Peaked around 2022; the community has largely moved on. Alternatives:
+- **Mantine** — closest spiritual successor to Chakra, similar "batteries included" DX, actively maintained
+- **shadcn/ui** — the dominant trend now; copy-paste components built on Radix UI + Tailwind CSS, you own the code
+- **Tailwind CSS** — utility-first, ubiquitous in modern stacks, powers most new projects
+- **Radix UI** — unstyled accessible primitives, bring your own styles
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+For a personal site: Mantine is the lowest-friction swap; Tailwind + shadcn is the "modern way."

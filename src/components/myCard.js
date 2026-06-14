@@ -1,6 +1,6 @@
 import { Stack, Text, useColorModeValue, } from '@chakra-ui/react';
 import * as React from "react";
-import me from '../images/me.jpg';
+import me from '../images/new_me.jpeg';
 import MyColours from "../theme/myColors";
 import GithubButton from "./githubButton";
 import GoogleScholarButton from './googleScholarButton';
