@@ -39,7 +39,7 @@ const Links = [
 
 const scroll = Scroll.animateScroll;
 
-export default function Navbar() {
+export default function Navbar({ visible = true }) {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const navNumbers = useColorModeValue(MyColours.NavigationNumber[0], MyColours.NavigationNumber[1])
     const navText = useColorModeValue(MyColours.NavigationText[0], MyColours.NavigationText[1])
@@ -89,11 +89,16 @@ export default function Navbar() {
             bg={navbarBackground}
             position={'fixed'}
             width={'100%'}
-            zIndex={10}
+            zIndex={'sticky'}
             borderBottomWidth={1}
             borderStyle={'solid'}
             px={4}
-            sx={{ backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)' }}>
+            sx={{
+                backdropFilter: 'blur(12px)',
+                WebkitBackdropFilter: 'blur(12px)',
+                transform: visible ? 'translateY(0)' : 'translateY(-100%)',
+                transition: 'transform 0.3s ease',
+            }}>
             <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
                 <HomeLink />
                 <Spacer flexGrow={1} />
