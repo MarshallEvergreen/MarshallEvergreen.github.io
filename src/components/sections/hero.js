@@ -29,8 +29,12 @@ export default function Hero() {
                         </Text>
                         <br />
                         <Text as={'span'}
-                            color={textColors}
-                            fontSize={HeaderSizes.large}>Abie Marshall.
+                            fontSize={HeaderSizes.large}
+                            bgGradient={useColorModeValue(
+                                'linear(to-r, purple.600, teal.500)',
+                                'linear(to-r, teal.200, purple.300)'
+                            )}
+                            bgClip={'text'}>Abie Marshall.
                         </Text>
                         <br />
                         <Text as={'span'}

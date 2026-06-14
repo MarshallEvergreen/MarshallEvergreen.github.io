@@ -45,7 +45,7 @@ export default function Navbar() {
     const navText = useColorModeValue(MyColours.NavigationText[0], MyColours.NavigationText[1])
     const navTextHover = useColorModeValue(MyColours.NavigationTextHover[0], MyColours.NavigationTextHover[1])
     const { colorMode, toggleColorMode } = useColorMode()
-    const navbarBackground = useColorModeValue(MyColours.NavFooter[0], MyColours.NavFooter[1])
+    const navbarBackground = useColorModeValue('rgba(255, 255, 255, 0.75)', 'rgba(26, 32, 44, 0.75)')
 
     const NavLink = ({ label, link }) => (
         <ScrollLink
@@ -92,7 +92,8 @@ export default function Navbar() {
             zIndex={10}
             borderBottomWidth={1}
             borderStyle={'solid'}
-            px={4}>
+            px={4}
+            sx={{ backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)' }}>
             <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
                 <HomeLink />
                 <Spacer flexGrow={1} />
