@@ -1,6 +1,20 @@
 import zapp_image from '../../images/zapp.webp';
+import ambient_gamma_image from '../../images/ambient-gamma-uk.png';
 
 const ProjectInfo = [
+    {
+        'experience': [
+            {
+                'title': 'Ambient Gamma UK',
+                'summary': 'A live map of ambient gamma radiation across the UK, visualising real-time data from the UKHSA RIMNET monitoring network.',
+                'bulletPoints': []
+            }
+        ],
+        'link': 'https://abiemarshall.com/ambient-gamma-uk/',
+        'tabName': 'Ambient Gamma UK',
+        'company': 'personal',
+        'image': ambient_gamma_image
+    },
     {
         'experience': [
             {
