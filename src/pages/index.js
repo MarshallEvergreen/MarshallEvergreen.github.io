@@ -1,4 +1,5 @@
 import * as React from "react";
+import FadeInView from "../components/fadeInView";
 import Layout from "../components/layout";
 import AboutMe from "../components/sections/aboutMe";
 import Education from "../components/sections/education";
@@ -10,10 +11,10 @@ const Index = () => {
     return (
         <Layout>
             <Hero />
-            <AboutMe />
-            <Work />
-            <Education />
-            <Projects />
+            <FadeInView><AboutMe /></FadeInView>
+            <FadeInView delay={0.05}><Work /></FadeInView>
+            <FadeInView delay={0.05}><Education /></FadeInView>
+            <FadeInView delay={0.05}><Projects /></FadeInView>
         </Layout>
     )
 }
